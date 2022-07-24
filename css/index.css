@@ -1,9 +1,10 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
+
 html,
 body {
     font-family: "Source Sans Pro", 'Times New Roman';
@@ -11,120 +12,190 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: white;
     scroll-behavior: smooth;
-} 
+}
+
 h1 {
-  font-size: 30px;
-  text-align: justify;
-  color: black;
+    font-size: 30px;
+    text-align: justify;
+    color: black;
 }
 
 h2 {
-  font-size: 20px;
-  text-align: justify;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .container {
-  background-image: url(./compostagem1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin-top: 40px;
- }
- #folhetos .img1{
-  width: 50%;
-  border-radius: 10%;
-  padding: 5px;
- }
- #folhetos .img2{
-  width: 50%;
-  border-radius: 10%;
-  padding: 5px;
- }
- #folhetos .img3{
-  width: 50%;
-  border-radius: 10%;
-  padding: 5px;
- }
-section .botao {
-  background-color: #4af12f;
-  margin: 20px;
+    background-image: url(./compostagem1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
 }
+
+#folhetos .img1 {
+    width: 50%;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+#folhetos .img2 {
+    width: 50%;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+#folhetos .img3 {
+    width: 50%;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+section .botao {
+    background-color: #4af12f;
+    margin: 20px;
+}
+
 section a {
-  text-decoration: none;
-  font-size: 20pt;
-  padding: 50px;
-  text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20pt;
+    padding: 50px;
+    text-transform: uppercase;
 }
 
 .insumos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .insumos img {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin-top: 30px;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 30px;
+    align-items: center;
 }
 
 .cards {
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
-
-
 .cards img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .texto-final {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
-.btn-whatsapp {
-  position: absolute;
-  outline: none;
-  bottom: 0;
-  right: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  background: #34af23;
-  color: #ffffff;
-  font-size: 2.3rem;
-  border: 1px solid #f1f1f1;
-  animation-name: pulsar;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-out;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-  animation-fill-mode: none;
-  animation-play-state: running;
+
+/*---------------------- CARROSSEL -------------------------*/
+
+#carousel {
+    width: 100%;
+    margin-bottom: 30px;
+    border-top: 1px solid #f5f6f3;
 }
 
+.carousel-images {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel-images a {
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.carousel-images a:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-images img {
+    display: none;
+}
+
+.carousel-images .active {
+    display: flex;
+    width: 100%;
+    max-height: 88vh;
+    transition: 0.5s ease;
+}
+
+#left-button {
+    left: 20px;
+    position: absolute;
+}
+
+#rigth-button {
+    right: 20px;
+    position: absolute;
+}
+
+#left,
+#rigth {
+    width: 30px;
+    background-color: white;
+}
+
+.text-informs {
+    left: 0;
+    right: 0;
+    top: 90%;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.2em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    align-items: baseline;
+}
+
+.informs {
+    color: white;
+    font-weight: bold;
+    font-style: oblique;
+    text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
+}
+
+
+/*
 @keyframes pulsar {
   0% {
-    height: 65px;
-    width: 65px;
+      height: 65px;
+      width: 65px;
   }
   100% {
-    height: 85px;
-    width: 85px;
+      height: 85px;
+      width: 85px;
   }
+}*/
+
+@media (max-width: 630px) {
+    .text-informs {
+        font-size: 0.5em;
+    }
 }

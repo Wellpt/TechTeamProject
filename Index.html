@@ -18,37 +18,68 @@
 
 
 <body>
+
     <main>
-        <section class="container">
-            <div>
-                <h1>TRANSFORME SEU AGRONEGÓCIO PROFISSIONAIS TRANSFORMANDO SEU RESÍDUOS EM ADUBO ORGÂNICO</h1>
-            </div>
-            <button class="botao">
-              <a href="#">Saiba Mais</a>
-            </button>
-        </section>
 
-        <section>
-            <nav id="folhetos">
-                <figure class="image">
-                    <a href="#"><img src="./Imagens/img tratadas/Cards/insumo1.png" class="img1" alt="" /> </a>
-                    <a href="#"><img src="./Imagens/img tratadas/Cards/insumos3.jpg" class="img2" alt="" /> </a>
-                    <a href="#"><img src="./Imagens/img tratadas/Cards/insumos600x400.png" class="img3" alt="" /> </a>
-                </figure>
-            </nav>
+        <section id="carousel">
+            <div class="carousel-images">
 
-        </section>
-        <section class="texto-final">
-            <div>
-                <h1>Pelo meio ambiente,</h1>
-                <h1>para conservação</h1>
-                <h1>do nosso PLANETA.</h1>
+                <img src="./Imagens/Carrousel/img1.jpeg" alt="" class="active">
+                <img src="./Imagens/Carrousel/img2.jpeg" alt="">
+                <img src="./Imagens/Carrousel/img3.jpeg" alt="">
+                <img src="./Imagens/Carrousel/img4.jpeg" alt="">
+
+                <div>
+                    <a onclick="trocaImg(-1)" id="left-button">❮</a>
+                </div>
+
+                <div>
+                    <a onclick="trocaImg(1)" id="rigth-button">❯</a>
+                </div>
+
+                <div class="text-informs">
+                    <p class="informs">TRANSFORME SEU AGRONEGÓCIO PROFISSIONAIS TRANSFORMANDO SEU RESÍDUOS EM ADUBO ORGÂNICO</p>
+                </div>
 
             </div>
+
         </section>
+
+
+
 
     </main>
-    <script src="./JS/carousel.js"></script>
+
+    <section class="container">
+        <div>
+            <h1>TRANSFORME SEU AGRONEGÓCIO PROFISSIONAIS TRANSFORMANDO SEU RESÍDUOS EM ADUBO ORGÂNICO</h1>
+        </div>
+        <button class="botao">
+              <a href="#">Saiba Mais</a>
+            </button>
+    </section>
+
+    <section>
+        <nav id="folhetos">
+            <figure class="image">
+                <a href="#"><img src="./Imagens/img tratadas/Cards/insumo1.png" class="img1" alt="" /> </a>
+                <a href="#"><img src="./Imagens/img tratadas/Cards/insumos3.jpg" class="img2" alt="" /> </a>
+                <a href="#"><img src="./Imagens/img tratadas/Cards/insumos600x400.png" class="img3" alt="" /> </a>
+            </figure>
+        </nav>
+
+    </section>
+    <section class="texto-final">
+        <div>
+            <h1>Pelo meio ambiente,</h1>
+            <h1>para conservação</h1>
+            <h1>do nosso PLANETA.</h1>
+
+        </div>
+    </section>
+
+
+    <script src="./JS/carrousel.js"></script>
 </body>
 
 </html>
