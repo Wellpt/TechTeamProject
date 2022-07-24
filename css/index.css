@@ -9,93 +9,57 @@ body {
     font-family: "Source Sans Pro", 'Times New Roman';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    background-color: white;
+    background-color: rgb(202, 250, 230);
     scroll-behavior: smooth;
 } 
 h1 {
   font-size: 30px;
-  text-align: justify;
+  text-align: center;
   color: black;
 }
 
-h2 {
-  font-size: 20px;
-  text-align: justify;
-}
+/*seção de cards */
 
-.container {
-  background-image: url(./compostagem1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.animation-cards {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 450px;
   align-items: center;
-  padding: 10px;
-  margin-top: 40px;
- }
- #folhetos .img1{
-  width: 50%;
-  border-radius: 10%;
-  padding: 5px;
- }
- #folhetos .img2{
-  width: 50%;
-  border-radius: 10%;
-  padding: 5px;
- }
- #folhetos .img3{
-  width: 50%;
-  border-radius: 10%;
-  padding: 5px;
- }
-section .botao {
-  background-color: #4af12f;
-  margin: 20px;
-}
-section a {
-  text-decoration: none;
-  font-size: 20pt;
-  padding: 50px;
-  text-transform: uppercase;
+  justify-content: space-around;
+  margin: 30px;
 }
 
-.insumos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card-container {
+  background-color: #f5f6f3;
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 1.5em #262621;
 }
 
-.insumos img {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin-top: 30px;
-  align-items: center;
+.card-container:hover {
+  opacity: 0.7;
+  transform: translateY(-15px);
+  transition: 0.5s;
 }
 
-.cards {
+.card-container figure img {
   width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
+  height: 100%;
+  border-radius: 20px;
 }
 
-
-
-.cards img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.card-container figure {
+  width: 100%;
+  height: 80%;
 }
 
-.texto-final {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+.content p {
+  text-align: center;
+  color: #011640;
+  font-weight: bold;
 }
+/* Fim sessão de cards */
 
 .btn-whatsapp {
   position: absolute;
