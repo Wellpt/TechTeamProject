@@ -1,0 +1,19 @@
+/*Estilos do header*/
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2D5016;
+    height: 10vh;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.logo{
+    font-size: 24px;
+}
