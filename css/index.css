@@ -1,96 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    background-color: #E4E9BE;
-}
-
-h1 {
-    font-size: 30px;
-    text-align: justify;
-    color: black;
-}
-
-.cards1 img {
-    display: inline-block;
-    justify-content: center;
-    align-items: center margin: 30px;
-    width: 30%;
-    margin-top: 40px;
-}
-
-section .botao {
-    background-color: #4af12f;
-    margin: 20px;
-}
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto-inicial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px
-}
-
-.cadastro1,
-.cadastro2 {
-    border: 1px solid black;
-    padding: 30px;
-    margin: auto;
-}
-
-.imagens-impactantes {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.texto-impacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-}
-
-#carrocel2 {
-    width: 400px;
-    height: 350px;
-}
-
-
-/*---------------------- CARROSSEL -------------------------*/
-
-#carousel {
-    width: 100%;
-    margin-bottom: 30px;
-    border-top: 1px solid #f5f6f3;
-=======
-*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: 0;
+  background-color: #e4e9be;
 }
 html,
 body {
-    font-family: "Source Sans Pro", 'Times New Roman';
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    background-color: rgb(202, 250, 230);
-    scroll-behavior: smooth;
-} 
+  font-family: "Source Sans Pro", "Times New Roman";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: #077c0d;
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 30px;
-  text-align: center;
+  text-align: justify;
   color: black;
+}
+
+.cards1 img {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  width: 30%;
+  margin-top: 40px;
+}
+
+section .botao {
+  background-color: #4af12f;
+  margin: 20px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-inicial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cadastro1,
+.cadastro2 {
+  border: 1px solid black;
+  padding: 30px;
+  margin: auto;
+}
+
+.imagens-impactantes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.texto-impacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+#carrocel2 {
+  width: 400px;
+  height: 350px;
+}
+/*---------------------- CARROSSEL -------------------------*/
+
+#carousel {
+  width: 100%;
+  border-top: 1px solid #f5f6f3;
+}
+
+.carousel-images {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.carousel-images a {
+  font-size: 2em;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.carousel-images a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-images img {
+  display: none;
+}
+
+.carousel-images .active {
+  display: flex;
+  width: 100%;
+  max-height: 88vh;
+  transition: 0.5s ease;
+}
+
+#left-button {
+  left: 20px;
+  position: absolute;
+}
+
+#rigth-button {
+  right: 20px;
+  position: absolute;
+}
+
+.text-informs {
+  left: 0;
+  right: 0;
+  top: 90%;
+  bottom: 0;
+  margin: auto;
+  font-size: 1.2em;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  align-items: baseline;
+}
+
+.informs {
+  background: none;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: -150px;
+  left: 100px;
+  font-weight: bold;
+  font-style: oblique;
+  text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
 }
 
 /*seção de cards */
@@ -100,9 +157,10 @@ h1 {
   height: 450px;
   align-items: center;
   justify-content: space-around;
-  margin: 30px;
 }
-
+figure.image {
+  border-radius: 20px;
+}
 .card-container {
   background-color: #f5f6f3;
   width: 30%;
@@ -128,41 +186,48 @@ h1 {
   width: 100%;
   height: 80%;
 }
-
-.content p {
-  text-align: center;
-  color: #011640;
-  font-weight: bold;
-}
 /* Fim sessão de cards */
 
-.btn-whatsapp {
-  position: absolute;
-  outline: none;
-  bottom: 0;
-  right: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  background: #34af23;
-  color: #ffffff;
-  font-size: 2.3rem;
-  border: 1px solid #f1f1f1;
-  animation-name: pulsar;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-out;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-  animation-fill-mode: none;
-  animation-play-state: running;
+/*Responsividade mobile */
+
+@media (max-width: 720px) {
+  .text-introdution {
+    margin-bottom: 70px;
+  }
+  /* Responsividade dos cards */
+  .animation-cards {
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-container {
+    width: 300px;
+    height: 280px;
+    margin-bottom: 70px;
+  }
+  /*Responsividade da seção de artigos */
+  .article-container {
+    padding: 15px;
+  }
+  .article-container figure {
+    text-align: center;
+  }
+  .article-container > div figure img {
+    width: 90%;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
-@keyframes pulsar {
-  0% {
-    height: 65px;
-    width: 65px;
+/* Responsividade para telas maiores*/
+
+@media (min-width: 930px) {
+  .card-container {
+    height: 60%;
   }
-  100% {
-    height: 85px;
-    width: 85px;
+}
+@media (min-width: 1200px) {
+  .animation-cards {
+    height: 600px;
   }
+}
