@@ -1,48 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Teste</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
-</head>
+    <title>Resíduo Sustentável</title>
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="container">
+
+        
+    <header>
+        <nav class="menu">
+            <a class="logo" href="/">Logo</a>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Parceiros</a></li>            
+                <li><a href="/">Login</a></li>            
+                <li><a href="/">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+        <section id="carousel">
+            <div class="carousel-images">
+            <img src="./Imagens/Carrousel/img1.jpeg" alt="" class="active" />
+            <img src="./Imagens/Carrousel/img2.jpeg" alt="" />
+            <img src="./Imagens/Carrousel/img3.jpeg" alt="" />
+            <img src="./Imagens/Carrousel/img4.jpeg" alt="" />
+
             <div>
-                <h1>TRANSFORME SEU AGRONEGÓCIO</h1>
-                <h2>PROFISSIONAIS TRANSFORMANDO SEU</h2>
-                <h2>RESÍDUOS EM ADUBO ORGÂNICO</h2>
-            </div>
-            <button class="botao">
-              <a href="#">Saiba Mais</a>
-            </button>
-            <img src="/Imagens/compostagem1.jpg" alt="">
-        </section>
-
-        <section>
-            <div class="cards">
-                <img id="foto1" src="./Imagens/insumos3.jpg" alt="">
-                <img id="foto2" src="./Imagens/insumos600x400.png" alt="">
-                <img id="foto3 " src="./Imagens/insumo1.png " alt=" ">
+                <a onclick="trocaImg(-1)" id="left-button">❮</a>
             </div>
 
-        </section>
-        <section class="texto-final">
             <div>
-                <h1>Pelo meio ambiente,</h1>
-                <h1>para conservação</h1>
-                <h1>do nosso PLANETA.</h1>
+                <a onclick="trocaImg(1)" id="rigth-button">❯</a>
+            </div>
 
+            <div class="text-informs">
+                <p class="informs">Resíduos que se transformam em VIDA!</p>
+            </div>
             </div>
         </section>
 
+      <section class="container">
+        <nav>
+          <div class="animation-cards">
+            <div class="card-container">
+              <figure class="image">
+                <a href="#"
+                  ><img src="Imagens/img tratadas/Cards/insumo1.png" alt="" />
+                </a>
+              </figure>
+              <div class="content">
+                <p class="title text--medium">
+                  Veja como usar seu adubo orgânico
+                </p>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <figure class="image">
+                <a href="#"
+                  ><img src="Imagens/img tratadas/Cards/insumos3.jpg" alt="" />
+                </a>
+              </figure>
+              <div class="content">
+                <p class="title text--medium">Veja benefícios</p>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <figure class="image">
+                <a href="#"
+                  ><img
+                    src="Imagens/img tratadas/Cards/insumos600x400.png"
+                    alt="Holambra - SP"
+                  />
+                </a>
+              </figure>
+              <div class="content">
+                <p class="title text--medium">
+                  Zero desperdício, 100% de retorno
+                </p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="texto-final">
+        <div>
+          <h1>Pelo meio ambiente,</h1>
+          <h1>para conservação</h1>
+          <h1>do nosso PLANETA.</h1>
+        </div>
+      </section>
+
+      <div class="texto-inicial">
+        <h1>PROFISSIONAIS TRANSFORMANDO SEU RESÍDUO EM ADUBO ORGÂNICO</h1>
+        <h2>TRANSORME SEU AGRONEGÓCIO</h2>
+      </div>
+
+      <section class="cadastro">
+        <div class="cadastro1">
+          <h1>Fornecedores de Insumos: Cadastre-se Aqui!</h1>
+        </div>
+
+        <div class="cadastro2">
+          <h1>Interessados: Cadastre-se Aqui!</h1>
+        </div>
+      </section>
+
+      <div>
+        <a href="#" target="_blank">
+          <img src="./Imagens/img tratadas/Cards/insumo1.png" alt="" srcset=""
+        /></a>
+
+        <a class="cards1" href="#" target="_blank">
+          <img src="./Imagens/img tratadas/Cards/insumos3.jpg" alt="" srcset=""
+        /></a>
+
+        <a class="cards1" href="#" target="_blank">
+          <img
+            src="./Imagens/img tratadas/Cards/insumos600x400.png"
+            alt=""
+            srcset=""
+        /></a>
+      </div>
+
+      <div class="texto-impacto">
+        <h1>O futuro depende de nós!</h1>
+      </div>
     </main>
+    <script src="./JS/carousel.js"></script>
 
-</body>
-
+    <footer>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged.
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "name": "techteamproject",
+  "version": "1.0.0",
+  "description": "ProjetoFinal-Equipe-TechTeam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wellpt/TechTeamProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wellpt/TechTeamProject/issues"
+  },
+  "homepage": "https://github.com/Wellpt/TechTeamProject#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
