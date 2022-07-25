@@ -1,233 +1,283 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  background-color: #e4e9be;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background-color: #e4e9be;
 }
+
+:root {
+    --cor-primaria-success: rgb(75, 200, 138);
+    --cor-hover-success: rgb(116, 158, 137);
+    --cor-secundaria-success: rgb(27, 66, 50)
+}
+
 html,
 body {
-  font-family: "Source Sans Pro", "Times New Roman";
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  background-color: #077c0d;
-  scroll-behavior: smooth;
+    font-family: "Source Sans Pro", "Times New Roman";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #077c0d;
+    scroll-behavior: smooth;
 }
 
 h1 {
-  font-size: 30px;
-  text-align: justify;
-  color: black;
+    font-size: 30px;
+    text-align: justify;
+    color: black;
 }
 
 .cards1 img {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  width: 30%;
-  margin-top: 40px;
-}
-
-section .botao {
-  background-color: #4af12f;
-  margin: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 30%;
+    margin-top: 40px;
 }
 
 section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .texto-inicial {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.cadastro1,
-.cadastro2 {
-  border: 1px solid black;
-  padding: 30px;
-  margin: auto;
+.cadastro-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 30px;
+    margin: auto;
 }
 
-.imagens-impactantes {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.btn-success {
+    background-color: var(--cor-primaria-success);
+    outline: none;
+    color: var(--cor-secundaria-success)
+}
+
+.btn-success:hover {
+    background-color: var(--cor-hover-success);
+}
+
+.btn-success:active {
+    color: var(--cor-primaria-success);
+    background-color: var(--cor-secundaria-success);
 }
 
 .texto-impacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
 }
 
 #carrocel2 {
-  width: 400px;
-  height: 350px;
+    width: 400px;
+    height: 350px;
 }
+
+.artigo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.artigo1 {
+    display: flex;
+    justify-content: justify;
+    align-items: justify;
+    margin: 30px;
+    padding: 20px;
+}
+
+
 /*---------------------- CARROSSEL -------------------------*/
 
 #carousel {
-  width: 100%;
-  border-top: 1px solid #f5f6f3;
+    width: 100%;
+    border-top: 1px solid #f5f6f3;
 }
 
 .carousel-images {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
 .carousel-images a {
-  font-size: 2em;
-  padding: 10px;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  background-color: transparent;
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
 }
 
 .carousel-images a:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel-images img {
-  display: none;
+    display: none;
 }
 
 .carousel-images .active {
-  display: flex;
-  width: 100%;
-  max-height: 88vh;
-  transition: 0.5s ease;
+    display: flex;
+    width: 100%;
+    max-height: 88vh;
+    transition: 0.5s ease;
 }
 
 #left-button {
-  left: 20px;
-  position: absolute;
+    left: 20px;
+    position: absolute;
 }
 
 #rigth-button {
-  right: 20px;
-  position: absolute;
+    right: 20px;
+    position: absolute;
 }
 
 .text-informs {
-  left: 0;
-  right: 0;
-  top: 90%;
-  bottom: 0;
-  margin: auto;
-  font-size: 1.2em;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-  align-items: baseline;
+    left: 0;
+    right: 0;
+    top: 90%;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.2em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    align-items: baseline;
 }
 
 .informs {
-  background: none;
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  top: -150px;
-  left: 100px;
-  font-weight: bold;
-  font-style: oblique;
-  text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
+    background: none;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: -150px;
+    left: 100px;
+    font-weight: bold;
+    font-style: oblique;
+    text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
 }
+
 
 /*seção de cards */
 
 .animation-cards {
-  display: flex;
-  height: 450px;
-  align-items: center;
-  justify-content: space-around;
+    display: flex;
+    height: 450px;
+    align-items: center;
+    justify-content: space-around;
 }
+
 figure.image {
-  border-radius: 20px;
+    border-radius: 20px;
 }
+
 .card-container {
-  background-color: #f5f6f3;
-  width: 30%;
-  height: 50%;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 0 0 1.5em #262621;
+    background-color: #f5f6f3;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 1.5em #262621;
 }
 
 .card-container:hover {
-  opacity: 0.7;
-  transform: translateY(-15px);
-  transition: 0.5s;
+    opacity: 0.7;
+    transform: translateY(-15px);
+    transition: 0.5s;
 }
 
 .card-container figure img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 .card-container figure {
-  width: 100%;
-  height: 80%;
+    width: 100%;
+    height: 80%;
 }
+
+
 /* Fim sessão de cards */
+
 
 /*Responsividade mobile */
 
 @media (max-width: 720px) {
-  .text-introdution {
-    margin-bottom: 70px;
-  }
-  /* Responsividade dos cards */
-  .animation-cards {
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .card-container {
-    width: 300px;
-    height: 280px;
-    margin-bottom: 70px;
-  }
-  /*Responsividade da seção de artigos */
-  .article-container {
-    padding: 15px;
-  }
-  .article-container figure {
-    text-align: center;
-  }
-  .article-container > div figure img {
-    width: 90%;
-    max-width: 450px;
-    margin-bottom: 20px;
-  }
+    .text-introdution {
+        margin-bottom: 70px;
+    }
+    /* Responsividade dos cards */
+    .animation-cards {
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card-container {
+        width: 300px;
+        height: 280px;
+        margin-bottom: 70px;
+    }
+    /*Responsividade da seção de artigos */
+    .article-container {
+        padding: 15px;
+    }
+    .article-container figure {
+        text-align: center;
+    }
+    .article-container>div figure img {
+        width: 90%;
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
 }
+
 
 /* Responsividade para telas maiores*/
 
 @media (min-width: 930px) {
-  .card-container {
-    height: 60%;
-  }
+    .card-container {
+        height: 60%;
+    }
 }
+
 @media (min-width: 1200px) {
-  .animation-cards {
-    height: 600px;
-  }
+    .animation-cards {
+        height: 600px;
+    }
 }
