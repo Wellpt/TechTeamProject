@@ -19,12 +19,11 @@ body {
 h1 {
     font-size: 30px;
     font-weight: 700;
-    text-align: justify;
+    text-align: center;
     color: black;
 }
 
 p {
-    display: flex;
     text-align: center;
 }
 
@@ -78,10 +77,13 @@ section {
 }
 
 .texto-impacto {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px;
+}
+
+.texto-impacto p{
+    text-align: left;
 }
 
 #carrocel2 {
@@ -222,26 +224,26 @@ footer {
     text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
 }
 
-
-/*seção de cards */
-
-.animation-cards {
-    display: flex;
-    height: 450px;
-    align-items: center;
-    justify-content: space-around;
-}
-
 figure.image {
     border-radius: 20px;
 }
 
+
+/*seção de cards */
+
+
+.container{
+    width: 100%; 
+}
+
+.animation-cards {
+    justify-content: center;
+    flex-direction: column;
+}
 .card-container {
-    background-color: #f5f6f3;
-    width: 30%;
-    height: 50%;
-    text-align: center;
-    border-radius: 20px;
+    width: 300px;
+    height: 280px;
+    margin-bottom: 70px;    
     box-shadow: 0 0 1.5em #262621;
 }
 
@@ -254,60 +256,50 @@ figure.image {
 .card-container figure img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
 }
 
 .card-container figure {
     width: 100%;
-    height: 80%;
+    height:100%;
 }
 
 
 /* Fim sessão de cards */
 
 
-/*Responsividade mobile */
+/*Responsividade desktop*/
 
-@media (max-width: 720px) {
-    .text-introdution {
-        margin-bottom: 70px;
+@media (min-width: 640px) {  
+    .container{
+        height: 500px;              
     }
-    /* Responsividade dos cards */
-    .animation-cards {
-        height: 100%;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .card-container {
-        width: 300px;
-        height: 280px;
-        margin-bottom: 70px;
-    }
-    /*Responsividade da seção de artigos */
-    .article-container {
-        padding: 15px;
-    }
-    .article-container figure {
-        text-align: center;
-    }
-    .article-container>div figure img {
-        width: 90%;
-        max-width: 450px;
-        margin-bottom: 20px;
-    }
-}
 
-
-/* Responsividade para telas maiores*/
-
-@media (min-width: 930px) {
-    .card-container {
+    .animation-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .card-container{
+        width: 35%;
         height: 60%;
     }
+
+    
 }
 
-@media (min-width: 1200px) {
+    
+
+
+
+/* Responsividade para telas maiores
+
+@media (min-width: 1008px) {
     .animation-cards {
         height: 600px;
+    }
+
+    .card-container {
+        height: 60%;
     }
 }
