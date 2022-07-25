@@ -1,3 +1,78 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background-color: #E4E9BE;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: justify;
+    color: black;
+}
+
+.cards1 img {
+    display: inline-block;
+    justify-content: center;
+    align-items: center margin: 30px;
+    width: 30%;
+    margin-top: 40px;
+}
+
+section .botao {
+    background-color: #4af12f;
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.cadastro1,
+.cadastro2 {
+    border: 1px solid black;
+    padding: 30px;
+    margin: auto;
+}
+
+.imagens-impactantes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto-impacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#carrocel2 {
+    width: 400px;
+    height: 350px;
+}
+
+
+/*---------------------- CARROSSEL -------------------------*/
+
+#carousel {
+    width: 100%;
+    margin-bottom: 30px;
+    border-top: 1px solid #f5f6f3;
+=======
 *{
   box-sizing: border-box;
   margin: 0;
@@ -91,4 +166,3 @@ h1 {
     height: 85px;
     width: 85px;
   }
-}
