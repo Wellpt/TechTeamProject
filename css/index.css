@@ -1,15 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+/*Estilos da Home */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  background-color: #e4e9be;
-}
 html,
 body {
-  font-family: "Source Sans Pro", "Times New Roman";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   background-color: #077c0d;

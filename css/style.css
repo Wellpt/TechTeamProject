@@ -1,13 +1,13 @@
 /*Estilos gerais do site*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
-    
-
+    outline: 0;
+    /* background-color: #e4e9be; */
+    font-family: "Source Sans Pro", "Times New Roman";
 }
 
 main p{
