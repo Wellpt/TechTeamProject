@@ -3,15 +3,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
-}
-
-html,
-body {
-    font-family: "Source Sans Pro", 'Times New Roman';
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    background-color: white;
-    scroll-behavior: smooth;
+    background-color: #E4E9BE;
 }
 
 h1 {
@@ -20,39 +12,12 @@ h1 {
     color: black;
 }
 
-h2 {
-    font-size: 20px;
-    text-align: justify;
-}
-
-.container {
-    background-image: url(./compostagem1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
+.cards1 img {
+    display: inline-block;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
+    align-items: center margin: 30px;
+    width: 30%;
     margin-top: 40px;
-}
-
-#folhetos .img1 {
-    width: 50%;
-    border-radius: 10%;
-    padding: 5px;
-}
-
-#folhetos .img2 {
-    width: 50%;
-    border-radius: 10%;
-    padding: 5px;
-}
-
-#folhetos .img3 {
-    width: 50%;
-    border-radius: 10%;
-    padding: 5px;
 }
 
 section .botao {
@@ -60,46 +25,43 @@ section .botao {
     margin: 20px;
 }
 
-section a {
-    text-decoration: none;
-    font-size: 20pt;
-    padding: 50px;
-    text-transform: uppercase;
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.insumos {
+.texto-inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.cadastro1,
+.cadastro2 {
+    border: 1px solid black;
+    padding: 30px;
+    margin: auto;
+}
+
+.imagens-impactantes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto-impacto {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px;
 }
 
-.insumos img {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin-top: 30px;
-    align-items: center;
-}
-
-.cards {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.cards img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.texto-final {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+#carrocel2 {
+    width: 400px;
+    height: 350px;
 }
 
 
@@ -180,19 +142,6 @@ section a {
     font-style: oblique;
     text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
 }
-
-
-/*
-@keyframes pulsar {
-  0% {
-      height: 65px;
-      width: 65px;
-  }
-  100% {
-      height: 85px;
-      width: 85px;
-  }
-}*/
 
 @media (max-width: 630px) {
     .text-informs {
