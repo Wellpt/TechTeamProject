@@ -19,12 +19,11 @@ body {
 h1 {
     font-size: 30px;
     font-weight: 700;
-    text-align: justify;
+    text-align: center;
     color: black;
 }
 
 p {
-    display: flex;
     text-align: center;
 }
 
@@ -81,10 +80,7 @@ section {
     text-align: start;
 }
 .content p {
-    padding: 10px;
-    font-size: 30px;
-    margin-left: 10%;
-    margin-right: auto;
+    text-align: center;
     color: #78A614;
     font-weight: bold;
 }
@@ -96,10 +92,13 @@ section {
 }
 
 .texto-impacto {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px;
+}
+
+.texto-impacto p{
+    text-align: left;
 }
 
 #carrocel2 {
@@ -240,28 +239,27 @@ footer {
     text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
 }
 
-
-/*seção de cards */
-
-.animation-cards {
-    display: flex;
-    height: 450px;
-    align-items: center;
-    justify-content: space-between;
-}
-
 figure.image {
     border-radius: 20px;
 }
 
 
+/*seção de cards */
+
+
+.container{
+    width: 100%; 
+}
+
+.animation-cards {
+    justify-content: center;
+    flex-direction: column;
+}
 .card-container {
-    box-sizing: border-box;
-    margin: 20px;
-    border: 10px solid #FFF;
-    box-shadow: 5px 5px 5px #0006;
-    flex-grow: 1;
-    transition: transform .5s linear;
+    width: 300px;
+    height: 280px;
+    margin-bottom: 70px;    
+    box-shadow: 0 0 1.5em #262621;
 }
 
 .card-container:hover {
@@ -277,55 +275,46 @@ figure.image {
 
 .card-container figure {
     width: 100%;
-    height: 80%;
+    height:100%;
 }
 
 
 /* Fim sessão de cards */
 
 
-/*Responsividade mobile */
+/*Responsividade desktop*/
 
-@media (max-width: 720px) {
-    .text-introdution {
-        margin-bottom: 70px;
+@media (min-width: 640px) {  
+    .container{
+        height: 500px;              
     }
-    /* Responsividade dos cards */
-    .animation-cards {
-        height: 100%;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .card-container {
-        width: 300px;
-        height: 280px;
-        margin-top: 20px;
-    }
-    /*Responsividade da seção de artigos */
-    .article-container {
-        padding: 15px;
-    }
-    .article-container figure {
-        text-align: center;
-    }
-    .article-container>div figure img {
-        width: 90%;
-        max-width: 450px;
-        margin-bottom: 20px;
-    }
-}
 
-
-/* Responsividade para telas maiores*/
-
-@media (min-width: 930px) {
-    .card-container {
+    .animation-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .card-container{
+        width: 35%;
         height: 60%;
     }
+
+    
 }
 
-@media (min-width: 1200px) {
+    
+
+
+
+/* Responsividade para telas maiores
+
+@media (min-width: 1008px) {
     .animation-cards {
         height: 600px;
+    }
+
+    .card-container {
+        height: 60%;
     }
 }
