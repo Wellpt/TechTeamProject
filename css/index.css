@@ -6,14 +6,14 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     background-color: #e4e9be;
-    /*background-color: #077c0d;*/
+    background-color: #d5e2d6;
     scroll-behavior: smooth;
     font-family: oxygen;
 }
 
 :root {
-    --cor-primaria-success: #78A614;;
-    --cor-hover-success: #ffffff;
+    --cor-primaria-success: #78A614;
+    --cor-hover-success: #e7dfdf;
     --cor-secundaria-success: rgb(27, 66, 50);
 }
 h1 {
@@ -57,20 +57,38 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .cadastro1 {
+    background-image: url(/Imagens/img2.png);
+    background-size:contain;
+    background-repeat:no-repeat;
     width: 100%;
-    height: 500px;
-   
+    height: 450px;
     display: inline-block;
-    text-align: center;
-    padding: 30px;
-    
+    text-align: start;
+    padding: 30px; 
+    margin-top: 2px;
 }
 .user {
     color: #78A614;
     text-align: center;
     margin-top: 50px;
+    text-align: start;
 }
+.reflex {
+    color: #78A614;
+    text-align: center;
+    text-align: start;
+}
+.content p {
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: auto;
+    color: #78A614;
+    font-weight: bold;
+}
+
 
 .imagens-impactantes {
     margin-top: 20px;
@@ -229,20 +247,21 @@ footer {
     display: flex;
     height: 450px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 figure.image {
     border-radius: 20px;
 }
 
+
 .card-container {
-    background-color: #f5f6f3;
-    width: 30%;
-    height: 50%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 1.5em #262621;
+    box-sizing: border-box;
+    margin: 20px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
 }
 
 .card-container:hover {
@@ -254,7 +273,6 @@ figure.image {
 .card-container figure img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
 }
 
 .card-container figure {
@@ -281,7 +299,7 @@ figure.image {
     .card-container {
         width: 300px;
         height: 280px;
-        margin-bottom: 70px;
+        margin-top: 20px;
     }
     /*Responsividade da seção de artigos */
     .article-container {
