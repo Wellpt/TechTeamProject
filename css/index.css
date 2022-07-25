@@ -6,14 +6,14 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     background-color: #e4e9be;
-    /*background-color: #077c0d;*/
+    background-color: #d5e2d6;
     scroll-behavior: smooth;
     font-family: oxygen;
 }
 
 :root {
-    --cor-primaria-success: #78A614;;
-    --cor-hover-success: #ffffff;
+    --cor-primaria-success: #78A614;
+    --cor-hover-success: #e7dfdf;
     --cor-secundaria-success: rgb(27, 66, 50);
 }
 h1 {
@@ -56,20 +56,38 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .cadastro1 {
+    background-image: url(/Imagens/img2.png);
+    background-size:contain;
+    background-repeat:no-repeat;
     width: 100%;
-    height: 500px;
-   
+    height: 450px;
     display: inline-block;
-    text-align: center;
-    padding: 30px;
-    
+    text-align: start;
+    padding: 30px; 
+    margin-top: 2px;
 }
 .user {
     color: #78A614;
     text-align: center;
     margin-top: 50px;
+    text-align: start;
 }
+.reflex {
+    color: #78A614;
+    text-align: center;
+    text-align: start;
+}
+.content p {
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: auto;
+    color: #78A614;
+    font-weight: bold;
+}
+
 
 .imagens-impactantes {
     margin-top: 20px;
