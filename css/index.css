@@ -80,10 +80,7 @@ section {
     text-align: start;
 }
 .content p {
-    padding: 10px;
-    font-size: 30px;
-    margin-left: 10%;
-    margin-right: auto;
+    text-align: center;
     color: #78A614;
     font-weight: bold;
 }
