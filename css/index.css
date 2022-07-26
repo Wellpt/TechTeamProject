@@ -16,6 +16,7 @@ body {
     --cor-hover-success: #e7dfdf;
     --cor-secundaria-success: rgb(27, 66, 50);
 }
+
 h1 {
     font-size: 30px;
     font-weight: 700;
@@ -39,7 +40,6 @@ p {
 section .botao {
     background-color: #78A614;
     margin: 20px;
-
 }
 
 section {
@@ -59,32 +59,34 @@ section {
 
 .cadastro1 {
     background-image: url(/Imagens/img2.png);
-    background-size:contain;
-    background-repeat:no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     height: 450px;
     display: inline-block;
     text-align: start;
-    padding: 30px; 
+    padding: 30px;
     margin-top: 2px;
 }
+
 .user {
     color: #78A614;
     text-align: center;
     margin-top: 50px;
     text-align: start;
 }
+
 .reflex {
     color: #78A614;
     text-align: center;
     text-align: start;
 }
+
 .content p {
     text-align: center;
     color: #78A614;
     font-weight: bold;
 }
-
 
 .imagens-impactantes {
     margin-top: 20px;
@@ -97,7 +99,7 @@ section {
     margin: 30px;
 }
 
-.texto-impacto p{
+.texto-impacto p {
     text-align: left;
 }
 
@@ -158,8 +160,73 @@ section {
 }
 
 footer {
-    background-color: aqua;
-    padding: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #3E5902;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #FFF;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.socials a img {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    background-color: #3E5902;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
 }
 
 
@@ -246,19 +313,19 @@ figure.image {
 
 /*seção de cards */
 
-
-.container{
-    width: 100%; 
+.container {
+    width: 100%;
 }
 
 .animation-cards {
     justify-content: center;
     flex-direction: column;
 }
+
 .card-container {
     width: 300px;
     height: 280px;
-    margin-bottom: 70px;    
+    margin-bottom: 70px;
     box-shadow: 0 0 1.5em #262621;
 }
 
@@ -275,7 +342,7 @@ figure.image {
 
 .card-container figure {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 
@@ -284,27 +351,20 @@ figure.image {
 
 /*Responsividade desktop*/
 
-@media (min-width: 640px) {  
-    .container{
-        height: 500px;              
+@media (min-width: 640px) {
+    .container {
+        height: 500px;
     }
-
-    .animation-cards{
+    .animation-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    
-    .card-container{
+    .card-container {
         width: 35%;
         height: 60%;
     }
-
-    
 }
-
-    
-
 
 
 /* Responsividade para telas maiores
