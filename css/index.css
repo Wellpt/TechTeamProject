@@ -67,6 +67,7 @@ section {
     text-align: start;
     padding: 30px;
     margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .user {
@@ -92,15 +93,25 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.texto-impacto {
+.art {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 30px;
+    text-align: center;
+}
+.art2 {
+    padding: 50px;
+    width: 70%;
+}
+
+ h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #3E5902;
 }
 
 .texto-impacto p {
-    text-align: left;
+    text-align: center;
 }
 
 #carrocel2 {
