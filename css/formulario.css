@@ -1,0 +1,32 @@
+/*Estilos do formulário de cadastro home */
+
+
+.form-doador{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-doador label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+
+.form-doador [type = submit] {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    margin-top: 25px;
+}
