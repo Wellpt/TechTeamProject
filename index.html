@@ -51,31 +51,31 @@
             </div>
         </section>
 
-        
-    <form>
-        <div class="form-doador">
-            <h3>Realize seu cadastro como doador parceiro!</h3>
 
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome">
+        <form>
+            <div class="form-doador">
+                <h3>Realize seu cadastro como doador parceiro!</h3>
 
-            <label for="cpfCnpj">CPF/CNPJ:</label>
-            <input type="text" id="cpfCnpj" name="cpfCnpj">
-            
-            <label for="login">Email Login:</label>
-            <input type="text" id="login" name="login">
-            
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha">
-            
-            <label for="senha">Confirmar Senha:</label>
-            <input type="password" id="senhav" name="senha">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome">
 
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="modelo" name="telefone">
+                <label for="cpfCnpj">CPF/CNPJ:</label>
+                <input type="text" id="cpfCnpj" name="cpfCnpj">
 
-            <label for="area">Área de atuação</label>
-            <select id="area">
+                <label for="login">Email Login:</label>
+                <input type="text" id="login" name="login">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+
+                <label for="senha">Confirmar Senha:</label>
+                <input type="password" id="senhav" name="senha">
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="modelo" name="telefone">
+
+                <label for="area">Área de atuação</label>
+                <select id="area">
                 <option value="varejo" selected>Varejo</option>
                 <option value="supermercado">Supermercado</option>
                 <option value="hortifruti">Hortifruti</option>
@@ -85,10 +85,10 @@
                 <option value="outros">Outros</option>
             </select>
 
-            <input type="submit" name="Enviar">
+                <input type="submit" name="Enviar">
 
-        </div>
-    </form>
+            </div>
+        </form>
 
 
         <div class="texto-inicial">
@@ -138,46 +138,30 @@
 
         </div>
 
+        <div class="container">
 
-        <section class="container">
-            <nav>
-                <div class="animation-cards">
-                    <div class="card-container">
-                        <figure class="image">
-                            <a href="https://blog.belagro.com.br/adubo-organico/#:~:text=Os%20cuidados%20na%20utiliza%C3%A7%C3%A3o%20do%20adubo%20org%C3%A2nico&text=O%20adubo%20org%C3%A2nico%20feito%20com,aten%C3%A7%C3%A3o%20di%C3%A1ria%2C%20mesmo%20que%20pequena." target="_blank"><img src="Imagens/img tratadas/Cards/insumo1.png" alt="" />
-                            </a>
-                        </figure>
-                        <div class="content">
-                            <p class="title text--medium">
-                                Veja como usar seu adubo orgânico
-                            </p>
-                        </div>
-                    </div>
+            <div class="card">
+                <img src="./Imagens/img tratadas/Cards/lixo-agricola-3.jpg" alt="">
+                <div class="content">
+                    <h2>Descarte Correto</h2>
+                    <h3>Evite o desperdício na sua produção</h3>
+                    <a href="https://summitagro.estadao.com.br/saude-no-campo/acoes-para-reduzir-o-desperdicio-de-alimentos-na-agricultura/#:~:text=Calcule%20as%20por%C3%A7%C3%B5es%20no%20momento,consumo%20mais%20consciente%20dos%20alimentos." target="_blank">Mais informações</a>
 
-                    <div class="card-container">
-                        <figure class="image">
-                            <a href="https://www.embrapa.br/busca-de-solucoes-tecnologicas/-/produto-servico/7239/composto-organico-100-vegetal#:~:text=N%C3%A3o%20h%C3%A1%20necessidade%20de%20adi%C3%A7%C3%A3o,ser%20certificado%20como%20produto%20org%C3%A2nico." target="_blank"><img src="Imagens/img tratadas/Cards/insumos3.jpg" alt="" />
-                            </a>
-                        </figure>
-                        <div class="content">
-                            <p class="title text--medium">Veja benefícios</p>
-                        </div>
-                    </div>
-
-                    <div class="card-container">
-                        <figure class="image">
-                            <a href="https://alimentacaoemfoco.org.br/adubo-sustentavel-diminui-desperdicio/" target="_blank"><img src="Imagens/img tratadas/Cards/insumos600x400.png" alt="Holambra - SP" />
-                            </a>
-                        </figure>
-                        <div class="content">
-                            <p class="title text--medium">
-                                Zero desperdício, 100% de retorno
-                            </p>
-                        </div>
-                    </div>
                 </div>
-            </nav>
-        </section>
+            </div>
+
+
+            <div class="card">
+                <div class="content">
+                    <h2>Desperdício na produção</h2>
+                    <h3>Descarte incorreto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Mais informações</a>
+                </div>
+            </div>
+
+        </div>
+
 
 
     </main>
@@ -215,6 +199,15 @@
 
     <script src="./js/header.js"></script>
     <script src="./JS/carousel.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
 
 </body>
 
