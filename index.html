@@ -90,32 +90,6 @@
                 <label for="login">Email Login:</label>
                 <input type="text" id="login" name="login">
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha">
-
-                <label for="senha">Confirmar Senha:</label>
-                <input type="password" id="senhav" name="senha">
-
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="modelo" name="telefone">
-
-                <label for="area">Área de atuação</label>
-                <select id="area">
-                    <option value="varejo" selected>Varejo</option>
-                    <option value="supermercado">Supermercado</option>
-                    <option value="hortifruti">Hortifruti</option>
-                    <option value="restaurante">Restaurante</option>
-                    <option value="produtor rural">Produtor Rural</option>
-                    <option value="cooperativa">Cooperativa</option>
-                    <option value="outros">Outros</option>
-                </select>
-
-                <input type="submit" name="Enviar">
-
-            </div>
-        </form>
-
-
         <section class="containerproje">
             <div class="slide-container active">
                 <div class="slide">
@@ -210,11 +184,34 @@
             </div>
 
 
-            <div id="prev" onclick="prev()">
-                < </div>
-                    <div id="next" onclick="next()"> > </div>
+            <div id="prev" onclick="prev()"> < </div>
+            <div id="next" onclick="next()"> > </div>
         </section>
 
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+
+                <label for="senha">Confirmar Senha:</label>
+                <input type="password" id="senhav" name="senha">
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="modelo" name="telefone">
+
+                <label for="area">Área de atuação</label>
+                <select id="area">
+                <option value="varejo" selected>Varejo</option>
+                <option value="supermercado">Supermercado</option>
+                <option value="hortifruti">Hortifruti</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="produtor rural">Produtor Rural</option>
+                <option value="cooperativa">Cooperativa</option>
+                <option value="outros">Outros</option>
+            </select>
+
+                <input type="submit" name="Enviar">
+
+            </div>
+        </form>
 
         <div class="texto-inicial">
             <h1 class="reflex">PROFISSIONAIS TRANSFORMANDO SEU RESÍDUO EM ADUBO ORGÂNICO.</h1>
@@ -252,7 +249,6 @@
             </a>
 
         </div>
-
         <article class="art">
             <div class="art2">
                 <h1>O futuro depende de nós!</h1>
@@ -313,8 +309,45 @@
             </nav>
         </section>
 
+        <div class="texto-impacto">
+            <h1>O futuro depende de nós!</h1>
+            <h2>Principais fontes de <b>desperdício</b> e perdas de alimentos:</h2>
 
+            <p>A Organização das Nações Unidas (ONU) definiu os 5 principais fatores causadores do desperdício de alimentos: Produção agrícola: perdas devido a danos mecânicos e/ou derramamento durante a operação de colheita; Manuseio e armazenamento pós-colheita:
+                perdas devido a derramamento e degradação durante o manuseio, armazenamento e transporte entre a fazenda e a distribuição. De todas as frutas e vegetais que vão para o lixo no Brasil, cerca de 50% são perdidas durante o transporte e manuseio,
+                processamento e distribuição.</p>
+
+        </div>
+
+        <div class="container">
+            <!--Primeiro Card-->
+            <div class="card">
+                <div class="imagens">
+                    <img src="./Imagens/img tratadas/Cards/producao-agricola.jpg" alt="">
+                </div>
+                <h1>Produção Sem Desperdício</h1>
+                <div class="content">
+                    <p>Zero desperdício, 100% de lucro.</p>
+                    <a href="https://croplifebrasil.org/noticias/desperdicio-de-alimentos-no-mundo-o-problema-tambem-e-nosso/#:~:text=Principais%20fontes%20de%20desperd%C3%ADcio%20e%20perdas%20de%20alimentos&text=Produ%C3%A7%C3%A3o%20agr%C3%ADcola%3A%20perdas%20devido%20a,a%20fazenda%20e%20a%20distribui%C3%A7%C3%A3o."
+                        target="_blank">Veja mais</a>
+                </div>
+            </div>
+            <!--Segundo Card-->
+            <div class="card">
+                <div class="imagens">
+                    <img src="./Imagens/img tratadas/Cards/desperdicio-de-alimentos.jpg" alt="">
+                </div>
+                <h1>Produção Sem Desperdício</h1>
+                <div class="content">
+                    <p>Alternativa para te ajudar a evitar o desperdício</p>
+                    <a href="https://summitagro.estadao.com.br/saude-no-campo/acoes-para-reduzir-o-desperdicio-de-alimentos-na-agricultura/#:~:text=Armazene%20os%20produtos%20de%20forma,embalagens%20espec%C3%ADficas%20para%20essa%20finalidade." target="_blank">Veja mais</a>
+                </div>
+            </div>
+
+        </div>
     </main>
+
+
 
     <footer>
         <div class="footer-content">
@@ -353,6 +386,8 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/carousel.js"></script>
+
+
 
 </body>
 

@@ -112,8 +112,18 @@ section {
     font-size: 2em;
     color: white;
 }
+.texto-impacto {
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+}
 
 .texto-impacto p {
+    text-align: center;
+}
+
+.texto-impacto h2 {
     text-align: center;
 }
 
@@ -242,6 +252,79 @@ footer {
     word-spacing: 2px;
     text-transform: capitalize;
 }
+
+/*seção de cards */
+
+.container {
+    width: 900px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card img {
+    transition: 0.5s;
+}
+
+.container .card h1 {
+    font-size: 2rem;
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .content p {
+    color: rgba(11, 61, 11, 0.527);
+    transition: 0.5s;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #f5f6f3;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container .card:hover {
+    background-color: #5a702a;
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px rgba(172, 190, 172, 0.527);
+    border-color: black;
+}
+
+.container .card:hover .content p {
+    color: #d5e2d6;
+}
+
+.container .card:hover .content a {
+    color: black;
+    background-color: #FFF;
+}
+
 /* Fim sessão de cards */
 
 
