@@ -75,6 +75,7 @@ section {
     text-align: center;
     margin-top: 50px;
     text-align: start;
+    background: none;
 }
 
 .reflex {
@@ -96,18 +97,20 @@ section {
 .art {
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 .art2 {
     padding: 50px;
-    width: 70%;
+    width: auto;
+    height: auto;
+    background: #3E5902;
+    color: white;
 }
 
  h1 {
+    
     text-align: center;
-    margin-top: 10px;
     font-size: 2em;
-    color: #3E5902;
+    color: white;
 }
 
 .texto-impacto p {
