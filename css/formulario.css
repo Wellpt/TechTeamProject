@@ -2,7 +2,7 @@
 
 
 .form-doador{
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 10px;
 }
@@ -19,14 +19,40 @@ input{
 }
 
 select{
+    font-size: 1em;
     width: 200px;
-    height: 30px;
+    height: 40px;
     padding: 5px;
 }
 
 .form-doador [type = submit] {
+    cursor: pointer;
+    height: 40px;    
+    font-size: 1em;
+    font-weight: bold;
     margin: auto;
     text-align: center;
     width: 50%;
     margin-top: 25px;
+}
+
+.form-doador [type = submit]:hover{
+    opacity: 0.8;
+}
+
+@media (min-width:640px){
+    .form-doador [type = submit]{        
+        margin-left: 0;
+        width: 200px;
+    }
+
+    input{
+        width: 400px;
+    }
+}
+
+@media (min-width:1008px) {
+    .form-doador{
+        width: 50%;
+    }
 }
