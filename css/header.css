@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+
 header .menu{
     display: flex;
     justify-content: space-between;
@@ -78,10 +83,7 @@ header .menu{
 /*Menu mobile*/
 
 @media (max-width:640px){
-    body{
-        overflow-x: hidden;
-    }
-
+  
     .nav-list{
         position: absolute;
        top: 9vh;

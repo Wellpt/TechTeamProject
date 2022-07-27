@@ -1,68 +1,53 @@
-/*Estilos do formulário de cadastro home */
+/*Estilos do formulário de cadastro home modal */
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-html,
-body {
-    height: 100%;
+.formulario-modal{
+    position: fixed;
+    display: block;
+    border: 2px solid #3E5902;
+    background-color: #e3f4d7;
+    border-radius: 20px;
+    width: 370px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
-.opacity {
-    width: 100%;
-    height: 400px;
-    background-color: black;
-}
-
-.texto-cadastro h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #618c03;
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
-.box {
-    width: 100%;
-    height: 400px;
-    background-image: url(../Imagens/Agro.jpeg);
-    opacity: 0.5;
-    transition: 2.5s;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.formulario-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.fechar{
+    font-size: 1.2em;
+    position: absolute;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    right: 0;
+    display: inline-block;
+    background-color: #618c03;
+    border: 1px solid #618c03;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
 
 .form-doador {
     width: 100%;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
     padding: 10px;
 }
 
-.box:hover {
-    opacity: 1.0;
-}
-
 .form-doador label {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    font-size: 1.2em;
     color: rgba(3, 3, 3, 0.993);
-    font-weight: 400;
 }
 
-.form-doador input {
+input {
     width: 100%;
-    height: 30px;
-    padding: 5px;
+    font-size: 1em;
+    height: 35px;
+    border: 1px solid #3E5902;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 select {
@@ -72,33 +57,40 @@ select {
     padding: 5px;
 }
 
-label {
-    font-size: 1.5rem;
+.form-doador [type=radio]{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.radio{
+    display: inline-block;
+    margin-bottom: 5px;    
 }
 
 .form-doador [type=submit] {
     cursor: pointer;
+    background-color: #618c03;
+    border:none;
     height: 40px;
     font-size: 1em;
     font-weight: bold;
-    margin: auto;
     text-align: center;
     width: 50%;
-    margin-top: 25px;
+    margin: 20px auto;
+    box-shadow: 0 0 0.5em black;
 }
 
 .form-doador [type=submit]:hover {
     opacity: 0.8;
 }
 
-@media (min-width:640px) {
+@media (min-width:640px) {  
+      
     .form-doador [type=submit] {
-        margin-left: 0;
-        width: 200px;
+        width: 180px;
     }
-    input {
-        width: 400px;
-    }
+   
 }
  /*
 @media (min-width:1008px) {
