@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-    --cor-primaria-success: #78A614;
+    --cor-primaria-success: #618c03;
     --cor-hover-success: #e7dfdf;
     --cor-secundaria-success: rgb(27, 66, 50);
 }
@@ -38,7 +38,7 @@ p {
 }
 
 section .botao {
-    background-color: #78A614;
+    background-color: #618c03;
     margin: 20px;
 }
 
@@ -84,7 +84,7 @@ section {
 
 .content p {
     text-align: center;
-    color: #78A614;
+    color: #618c03;
     font-weight: bold;
 }
 
@@ -233,88 +233,16 @@ footer {
     word-spacing: 2px;
     text-transform: capitalize;
 }
+/* Sessão article */
 
-/* ANALISAR SE CÓDIGOS AINDA SERÂO USADOS, SENÂO EXCLUIR
-/*---------------------- CARROSSEL -------------------------
-
-#carousel {
-    width: 100%;
-    border-top: 1px solid #f5f6f3;
-}
-
-.carousel-images {
+.art {
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    position: relative;
+    padding: 2%;
 }
-
-.carousel-images a {
-    font-size: 2em;
-    padding: 10px;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    background-color: transparent;
+.art2 {
+    width: 50%;
+    padding: 2%;
 }
-
-.carousel-images a:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.carousel-images img {
-    display: none;
-}
-
-.carousel-images .active {
-    display: flex;
-    width: 100%;
-    max-height: 88vh;
-    transition: 0.5s ease;
-}
-
-#left-button {
-    left: 20px;
-    position: absolute;
-}
-
-#rigth-button {
-    right: 20px;
-    position: absolute;
-}
-
-.text-informs {
-    left: 0;
-    right: 0;
-    top: 90%;
-    bottom: 0;
-    margin: auto;
-    font-size: 1.2em;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: absolute;
-    align-items: baseline;
-}
-
-.informs {
-    background: none;
-    color: white;
-    font-size: 25px;
-    position: absolute;
-    top: -150px;
-    left: 100px;
-    font-weight: bold;
-    font-style: oblique;
-    text-shadow: 0 0 0.4em #000, 0 0 0.4em #000, 0 0 0.4em #000;
-}
-
-figure.image {
-    border-radius: 20px;
-}
-
 
 /*seção de cards */
 
