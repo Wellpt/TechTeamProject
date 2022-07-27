@@ -1,3 +1,4 @@
+
 /*Estilos do formulário de cadastro home modal */
 
 .formulario-modal{
@@ -16,48 +17,10 @@
     animation-duration: 800ms;
 }
 
-.fechar{
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    right: 0;    
-    margin-right: 10px;
-    font-size: 1.2em;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    color: white;
-    background-color: #618c03;
-    border: 1px solid #618c03;
-    border-radius: 50%;
-}
-
 .form-doador {
     width: 100%;
     flex-direction: column;
     padding: 10px;
-}
-
-.form-doador label {
-    font-size: 1.2em;
-    color: rgba(3, 3, 3, 0.993);
-}
-
-input {
-    width: 100%;
-    font-size: 1em;
-    height: 35px;
-    border: 1px solid #3E5902;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-select {
-    font-size: 1em;
-    width: 200px; 
-    height: 40px;
-    padding: 5px;
 }
 
 .form-doador [type=radio]{
@@ -71,7 +34,8 @@ select {
     margin-bottom: 5px;    
 }
 
-.form-doador [type=submit] {
+.form-doador [type=submit] , .form-coleta [type=submit] {
+    display: block;
     cursor: pointer;
     background-color: #618c03;
     border: 1px solid #618c03;
@@ -84,15 +48,78 @@ select {
     box-shadow: 0 0 0.5em black;
 }
 
-.form-doador [type=submit]:hover {
+.form-doador [type=submit]:hover, .form-coleta [type=submit]:hover {
     opacity: 0.8;
 }
 
+.fechar{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    background-color: #618c03;
+    border: 1px solid #618c03;
+    border-radius: 50%;
+}
+
+/*Estilos gerais formulario*/
+
+input {
+    width: 100%;
+    font-size: 1em;
+    height: 35px;
+    border: 1px solid #3E5902;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+select {
+    font-size: 1em;
+    width: 200px; 
+    height: 40px;
+    padding: 5px;
+}
+
+label {
+    font-size: 1.2em;
+    color: rgba(3, 3, 3, 0.993);
+}
+
+/*Estilos formulário coleta*/
+
+.form-coleta{
+    display: none;
+    width: 100%;    
+    background-color: #e3f4d7;
+    flex-direction: column;
+    padding: 20px;    
+    animation: animatemodal;
+    animation-duration: 800ms;
+}
+
+.form-coleta p{
+    padding-bottom: 20px;
+}
+
+.form-coleta select{
+    display: block;
+}
+
+
 @media (min-width:640px) {  
       
-    .form-doador [type=submit] {
+    .form-doador [type=submit], .form-coleta [type=submit]{
         width: 180px;
-    }
+    } 
+       
    
 }
  

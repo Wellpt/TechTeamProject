@@ -139,6 +139,8 @@ section {
     background-color: var(--cor-secundaria-success);
 }
 
+/*Sessão galeria */
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -276,7 +278,6 @@ section {
         height: 60%;
     }
 }
-
 
 /* Responsividade para telas maiores
 
