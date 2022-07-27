@@ -5,8 +5,7 @@ html,
 body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    background-color: #e4e9be;
-    background-color: #d5e2d6;
+    background-color: #e3f4d7;
     scroll-behavior: smooth;
     font-family: oxygen;
 }
@@ -240,8 +239,12 @@ footer {
     padding: 2%;
 }
 .art2 {
+    background-color: white;
     width: 50%;
     padding: 2%;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
 }
 
 /*seção de cards */
