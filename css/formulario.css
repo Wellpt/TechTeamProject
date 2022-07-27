@@ -1,13 +1,42 @@
 /*Estilos do formulário de cadastro home */
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+html,
 body {
+    height: 100%;
+}
+
+.opacity {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.texto-cadastro h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #618c03;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.box {
+    width: 100%;
+    height: 400px;
     background-image: url(../Imagens/Agro.jpeg);
+    opacity: 0.5;
+    transition: 2.5s;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
+}
+
+.formulario-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .form-doador {
@@ -17,10 +46,8 @@ body {
     padding: 10px;
 }
 
-.form-doador h2 {
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: 300;
+.box:hover {
+    opacity: 1.0;
 }
 
 .form-doador label {
