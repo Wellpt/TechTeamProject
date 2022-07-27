@@ -56,8 +56,11 @@ section {
     margin-bottom: 20px;
 }
 
-.cadastro1 {
-    background-image: url(/Imagens/img2.png);
+.cadastro {
+    background-image: url(../Imagens/img2.png);
+}
+
+.cadastro1 {    
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
