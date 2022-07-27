@@ -1,106 +1,132 @@
-/*Estilos do formulário de cadastro home */
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-html,
-body {
-    height: 100%;
-}
+/*Estilos do formulário de cadastro home modal */
 
-.opacity {
-    width: 100%;
-    height: 400px;
-    background-color: black;
-}
-
-.texto-cadastro h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #618c03;
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
-.box {
-    width: 100%;
-    height: 400px;
-    background-image: url(../Imagens/Agro.jpeg);
-    opacity: 0.5;
-    transition: 2.5s;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.formulario-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.formulario-modal{
+    position: fixed;
+    display: none;
+    border: 2px solid #3E5902;
+    background-color: #e3f4d7;
+    border-radius: 20px;
+    width: 370px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    animation: animatemodal;
+    animation-duration: 800ms;
 }
 
 .form-doador {
-    display: flex;
-    justify-content: center;
+    width: 100%;
     flex-direction: column;
     padding: 10px;
 }
 
-.box:hover {
-    opacity: 1.0;
+.form-doador [type=radio]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
 }
 
-.form-doador label {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color: rgba(3, 3, 3, 0.993);
-    font-weight: 400;
+.radio{
+    display: inline-block;
+    margin-bottom: 5px;    
 }
+
+.form-doador [type=submit] , .form-coleta [type=submit] {
+    display: block;
+    cursor: pointer;
+    background-color: #618c03;
+    border: 1px solid #618c03;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 0.5em black;
+}
+
+.form-doador [type=submit]:hover, .form-coleta [type=submit]:hover {
+    opacity: 0.8;
+}
+
+.fechar{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    background-color: #618c03;
+    border: 1px solid #618c03;
+    border-radius: 50%;
+}
+
+/*Estilos gerais formulario*/
 
 input {
     width: 100%;
-    height: 30px;
+    font-size: 1em;
+    height: 35px;
+    border: 1px solid #3E5902;
     padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 select {
     font-size: 1em;
-    width: 200px;
+    width: 200px; 
     height: 40px;
     padding: 5px;
 }
 
 label {
-    font-size: 1.5rem;
+    font-size: 1.2em;
+    color: rgba(3, 3, 3, 0.993);
 }
 
-.form-doador [type=submit] {
-    cursor: pointer;
-    height: 40px;
-    font-size: 1em;
-    font-weight: bold;
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    margin-top: 25px;
+/*Estilos formulário coleta*/
+
+.form-coleta{
+    display: none;
+    width: 100%;    
+    background-color: #e3f4d7;
+    flex-direction: column;
+    padding: 20px;    
+    animation: animatemodal;
+    animation-duration: 800ms;
 }
 
-.form-doador [type=submit]:hover {
-    opacity: 0.8;
+.form-coleta p{
+    padding-bottom: 20px;
 }
 
-@media (min-width:640px) {
-    .form-doador [type=submit] {
-        margin-left: 0;
-        width: 200px;
-    }
-    input {
-        width: 400px;
-    }
+.form-coleta select{
+    display: block;
 }
 
-@media (min-width:1008px) {
-    .form-doador {
-        width: 50%;
-    }
+
+@media (min-width:640px) {  
+      
+    .form-doador [type=submit], .form-coleta [type=submit]{
+        width: 180px;
+    } 
+       
+   
+}
+ 
+@keyframes animatemodal {
+    from{opacity: 1;}
+        
+    
+    from {opacity: 0;}
+    
 }

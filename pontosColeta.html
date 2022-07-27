@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/formulario.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/pontosColeta.css">
 
 
 
@@ -49,45 +48,61 @@
             <h2>Realize seu cadastro como doador parceiro!</h2>
         </div>
 
-        <div class="formulario-container">
+        <button onclick="abrirdoacao()">Agendar doação</button>
+
+        <div class="form-coleta">
+
+            <p>Cadastre sua doação de resíduos orgânicos!</p>
+            <div class="fechar" onclick="fechardoacao()">✘</div>
+
             <form>
-                <div class="form-doador">
-
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome">
-
-                    <label for="cpfCnpj">CPF/CNPJ:</label>
-                    <input type="text" id="cpfCnpj" name="cpfCnpj">
-
-                    <label for="login">Email Login:</label>
-                    <input type="text" id="login" name="login">
-
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha">
-
-                    <label for="senha">Confirmar Senha:</label>
-                    <input type="password" id="senhav" name="senha">
-
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" id="modelo" name="telefone">
-
-                    <label for="area">Área de atuação</label>
-                    <select id="area">
-                <option value="varejo" selected>Varejo</option>
-                <option value="supermercado">Supermercado</option>
-                <option value="hortifruti">Hortifruti</option>
-                <option value="restaurante">Restaurante</option>
-                <option value="produtor rural">Produtor Rural</option>
-                <option value="cooperativa">Cooperativa</option>
-                <option value="outros">Outros</option>
-            </select>
-
+                <div class="form">  
+                    
+                    <label for="nomefantasia">Nome fantasia/Razão Social:*</label>    
+                    <input type="text" id="nomefantasia" name="nomefantasia" required> 
+                    
+                    <p>Endereço pra coleta da doação:</p>
+                       
+                    <label for="cep">CEP:*</label>
+                    <input type="number" id="cep" name="cep" placeholder="12345678" required>
+    
+                    <label for="bairro">Bairro:*</label>
+                    <input type="text" id="bairro" name="bairro" required>
+    
+                    <label for="logradouro">Rua:*</label>
+                    <input type="text" id="logradouro" name="logradouro" required>
+    
+                    <label for="numero">Número:*</label>
+                    <input type="number" id="numero" name="numero" required>
+    
+                    <label for="cidade">Cidade:*</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                    
+                    <label for="estado">Estado:*</label>
+                    <input type="text" id="estado" name="estado" required>
+                    
+                    <label for="quantidade">Quantidade(kg):</label>
+                    <input type="number" id="quantidade" name="quantidade" >
+                    
+                    <label for="data">Data:*</label>
+                    <input type="text" id="data" name="data" required>
+                    
+                    <label for="hora">Horário para retirada:*</label>
+                    <input type="time" id="hora" name="hora" placeholder="00:00" required>
+                    
+                    <select id="frequencia">
+                        <option value="unica" selected>Única</option>
+                        <option value="semanal">Semanal</option>
+                        <option value="mensal">Mensal</option>
+                    </select>
+    
                     <input type="submit" name="Enviar">
-
+    
                 </div>
             </form>
         </div>
 
+        
     </main>
 
     <div class="texto-impacto">
@@ -128,7 +143,7 @@
     </footer>
 
     <script src="./js/header.js"></script>
-    <script src="./JS/carousel.js"></script>
+    <script src="./js/formulario.js"></script>
 
 
 
