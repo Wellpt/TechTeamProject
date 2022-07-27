@@ -2,7 +2,7 @@
 
 .formulario-modal{
     position: fixed;
-    display: block;
+    display: none;
     border: 2px solid #3E5902;
     background-color: #e3f4d7;
     border-radius: 20px;
@@ -12,21 +12,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    animation: animatemodal;
+    animation-duration: 800ms;
 }
 
 .fechar{
-    font-size: 1.2em;
+    display: inline-block;
     position: absolute;
     text-align: center;
+    right: 0;    
     margin-right: 10px;
+    font-size: 1.2em;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
     color: white;
-    right: 0;
-    display: inline-block;
     background-color: #618c03;
     border: 1px solid #618c03;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
 }
 
 .form-doador {
@@ -59,8 +62,8 @@ select {
 
 .form-doador [type=radio]{
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .radio{
@@ -71,7 +74,7 @@ select {
 .form-doador [type=submit] {
     cursor: pointer;
     background-color: #618c03;
-    border:none;
+    border: 1px solid #618c03;
     height: 40px;
     font-size: 1em;
     font-weight: bold;
@@ -92,9 +95,11 @@ select {
     }
    
 }
- /*
-@media (min-width:1008px) {
-    .form-doador {
-        width: 50%;
-    }
+ 
+@keyframes animatemodal {
+    from{opacity: 1;}
+        
+    
+    from {opacity: 0;}
+    
 }
