@@ -278,11 +278,12 @@ footer {
 }
 
 .container .card .content {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 .container .card .content p {
+    font-size: 1.1em;
     color: rgba(11, 61, 11, 0.527);
     transition: 0.5s;
 }
