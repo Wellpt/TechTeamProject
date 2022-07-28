@@ -20,15 +20,15 @@ function fetchApiSubmit() {
     const cpfCnpj = document.querySelector('#cpfCnpj').value;
     const telefone = document.querySelector('#telefone').value;
     const areaAtuacao = document.querySelector('#areaAtuacao').value;
-    const id_coletor_doador = document.querySelector('.radio').value;
+    const id_coletor_doador = document.querySelector('.coletor_doador').value;
     const update = {
-        email: email,
-        senha: senha,
         nome: nome,
         cpfCnpj: cpfCnpj,
         telefone:telefone,
         areaAtuacao: areaAtuacao,
-        id_coletor_doador: id_coletor_doador
+        email: email,
+        senha: senha,
+        coletor_doador: id_coletor_doador
     };
       
     
