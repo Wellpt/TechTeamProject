@@ -79,7 +79,7 @@ label {
     margin-bottom: 5px;    
 }
 
-.form-doador [type=submit] , 
+.form-doador [type=button] , 
 .form-coleta [type=submit], 
 .modalLogin [type=submit] {
     display: block;

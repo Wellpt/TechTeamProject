@@ -7,23 +7,18 @@ function fetchApiSubmit() {
     const cidade = document.querySelector('#cidade').value;
     const estado = document.querySelector('#estado').value;
     const quantidade = document.querySelector('#quantidade').value;
-    const data = document.querySelector('#data').value;
-    const hora = document.querySelector('#hora').value;
-    const frequencia = document.querySelector('#frequencia').value;
+    const data = document.querySelector('#data_coleta').value;
     
     const update = {
         nome: nome,
-        cep: cep,
-        bairro: bairro,
         logradouro: logradouro,
         numero: numero,
+        bairro: bairro,
+        cep: cep, 
         cidade: cidade,
         estado: estado,
-        quantidade: quantidade,
-        data: data,
-        hora: hora,
-        frequencia: frequencia
-
+        data_coleta: data,
+        quantidade: quantidade        
     };
         
     const options = {
