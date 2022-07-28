@@ -30,9 +30,9 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="/">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="/">Parceiros</a></li>
-                <li><a href="/">Login</a></li>
+                <li onclick="abrirLogin()"><a href="#">Login</a></li>
                 <li><a href="/">Contato</a></li>
             </ul>
 
@@ -48,80 +48,187 @@
             <h2>Realize seu cadastro como doador parceiro!</h2>
         </div>
 
-        <button onclick="abrirdoacao()">Agendar doação</button>
+        <button onclick="abrirdoacao()">Cadastrar Ponto de Coleta</button>
 
-        <div class="form-coleta">
+        <div class="modal-doacao">
 
-            <p>Cadastre sua doação de resíduos orgânicos!</p>
-            <div class="fechar" onclick="fechardoacao()">✘</div>
+            <div class="form-coleta">
 
-            <form>
-                <div class="form">  
-                    
-                    <label for="nomefantasia">Nome fantasia/Razão Social:*</label>    
-                    <input type="text" id="nome" name="nomefantasia" required> 
-                    
-                    <p>Endereço pra coleta da doação:</p>
-                       
-                    <label for="cep">CEP:*</label>
-                    <input type="number" id="cep" name="cep" placeholder="12345678" required>
-    
-                    <label for="bairro">Bairro:*</label>
-                    <input type="text" id="bairro" name="bairro" required>
-    
-                    <label for="logradouro">Rua:*</label>
-                    <input type="text" id="logradouro" name="logradouro" required>
-    
-                    <label for="numero">Número:*</label>
-                    <input type="number" id="numero" name="numero" required>
-    
-                    <label for="cidade">Cidade:*</label>
-                    <input type="text" id="cidade" name="cidade" required>
-                    
-                    <label for="estado">Estado:*</label>
-                    <input type="text" id="estado" name="estado" required>
-                    
-                    <label for="quantidade">Quantidade(kg):</label>
-                    <input type="number" id="quantidade" name="quantidade" >
-                    
-                    <label for="data">Data:*</label>
-                    <input type="text" id="data" name="data" required>
-                    
-                    <label for="hora">Horário para retirada:*</label>
-                    <input type="time" id="hora" name="hora" placeholder="00:00" required>
-                    
-                    <select id="frequencia">
-                        <option value="unica" selected>Única</option>
-                        <option value="semanal">Semanal</option>
-                        <option value="mensal">Mensal</option>
-                    </select>
-    
-                    <input type="submit" name="Enviar" onclick="fetchApiSubmit()">
-    
-                </div>
-            </form>
+                <div class="fechar" onclick="fechardoacao()">✘</div>
+                <h2>Dados do ponto de coleta:</h2> <br>
+
+                <label for="nomefantasia">Nome fantasia/Razão Social:*</label>
+                <input type="text" id="nome" name="nomefantasia" placeholder="Mercado do José" required>             
+            
+                <label for="logradouro">Rua:*</label>
+                <input type="text" id="logradouro" name="logradouro" required>
+
+                <label for="numero">Número:*</label>
+                <input type="number" id="numero" name="numero" required>
+
+                <label for="bairro">Bairro:*</label>
+                <input type="text" id="bairro" name="bairro" required>
+
+                <label for="cep">CEP para retirada:*</label>
+                <input type="number" id="cep" name="cep" placeholder="12345678" required>
+
+                <label for="cidade">Cidade:*</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="estado">Estado:*</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <label for="data_coleta">Dia e horário da coleta:*</label>
+                <input type="text" id="data_coleta" name="data_coleta" placeholder="Ex: toda quinta-feira às 09:00 horas" required>
+
+                <label for="quantidade">Quantidade(kg):</label>
+                <input type="number" id="quantidade" name="quantidade">
+
+                <!-- <select id="frequencia">
+                    <option value="unica" selected>Única</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="mensal">Mensal</option>
+                </select> -->
+
+                <input type="submit" name="Enviar" onclick="fetchApiSubmit()">
+
+            </div>
         </div>
 
-        
+
+        <div class="modalLogin" id="modalLogin">
+
+            <div class="modalInternLogin" id="modalInternLogin">
+
+                <div class="fechar" onclick="fecharLogin()">✘</div>
+
+                <h2>Realize o login para continuar!</h2><br>
+
+                <label for="login">Login:</label>
+                <input type="text" id="campoLogin" name="login" placeholder="exemplo@email.com" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="campoPassword" name="senha" required>
+
+                <input type="submit" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin()">
+            </div>
+        </div>
+
+
+
     </main>
 
-    <div class="texto-impacto">
+
+
+    <section class="sessao-depoimentos">
+        <div class="texto-depoimento">
+            <h1>Depoimentos dos parceiros</h1>
+            <p></p>
+        </div>
+        <section class="depoimento">
+
+            <div id="container">
+                <div id="carta">
+                    <div id="frente">
+                        <img src="./Imagens/img tratadas/Cards/foto1.jfif" alt="">
+                        <h3>Alexia Meirelles</h3>
+                    </div>
+
+                    <div id="atras">
+                        <h2>Depoimento</h2>
+                        <p>"Gostaria de parabenizar a todos que fazem parte deste projeto. Soluções como essas que visam
+                            a sustentabilidade, redução de desperdício são fundamentais nos dias atuais."
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="container">
+                <div id="carta">
+                    <div id="frente">
+                        <img src="./Imagens/img tratadas/Cards/foto3.jfif" alt="">
+                        <h3>Ítalo Guerra</h3>
+
+                    </div>
+
+
+                    <div id="atras">
+                        <h2>Depoimento</h2>
+                        <p>“Após aderir ao projeto Resíduos Organicos, percebi que estou tendo maior rendimento,
+                            qualidade e uniformidade nas coletas. O nosso foco agora é despedício zero”
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="depoimento">
+
+            <div id="container">
+                <div id="carta">
+                    <div id="frente"><img src="./Imagens/img tratadas/Cards/foto2.jfif" alt="">
+                        <h3>João Medeiros</h3>
+                    </div>
+
+                    <div id="atras">
+                        <h2>Depoimento</h2>
+                        <p>Levando em consideração o desperdício, sustentabilidade e rentabilidade, sempre buscamos
+                            soluções eficientes e inivadoras.
+                        <p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <div id="carta">
+                    <div id="frente">
+                        <img src="./Imagens/img tratadas/Cards/foto4.jfif" alt="">
+                        <h3>Priscila Sena</h3>
+                    </div>
+
+
+                    <div id="atras">
+                        <h2>Depoimento</h2>
+                        <p>Sou pequena agricultura. Hoje temos um percentiual de desperdício em torno de 10%. Poder
+                            contar com um projeto desse tipo fará diferença.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+
+
+    <div class="texto-impacto ">
         <h1>O futuro depende de nós!</h1>
     </div>
+
 
 
 
     <footer>
         <div class="footer-content">
             <h3>Obrigado pela sua visita!</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quam quaerat dolorem, aperiam nostrum, aliquam repellendus consectetur laborum facere vel quidem eveniet. Id odit accusantium veritatis tenetur adipisci delectus laboriosam!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quam quaerat dolorem, aperiam nostrum,
+                aliquam repellendus consectetur laborum facere vel quidem eveniet. Id odit accusantium veritatis tenetur
+                adipisci delectus laboriosam!</p>
             <ul class="socials">
 
                 <li>
                     <a href="#"><img src="./Imagens/img tratadas/icons/facebook.png">
                 </li>
                 <li>
-                    <a href="https://github.com/Wellpt/TechTeamProject" target="_blank"><img src="./Imagens/img tratadas/icons/git.png">
+                    <a href="https://github.com/Wellpt/TechTeamProject" target="_blank"><img
+                            src="./Imagens/img tratadas/icons/git.png">
                     </a>
                 </li>
                 <li>
@@ -129,7 +236,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://wa.me/5581988693599?text=Agradecemos+o+seu+contato!+%0d%0aEm+breve+voc%c3%aa+ser%c3%a1+atendido." target="_blank"><img src="./Imagens/img tratadas/icons/whatsapp.png"></a>
+                    <a href="https://wa.me/5581988693599?text=Agradecemos+o+seu+contato!+%0d%0aEm+breve+voc%c3%aa+ser%c3%a1+atendido."
+                        target="_blank"><img src="./Imagens/img tratadas/icons/whatsapp.png"></a>
                 </li>
                 <li>
                     <a href="#"><img src="./Imagens/img tratadas/icons/email.png"></a>
@@ -137,14 +245,16 @@
             </ul>
         </div>
 
-        <div class="footer-bottom">
-            <p>Copyright &copy;2022 TechTeam</p>
-        </div>
-    </footer>
 
-    <script src="./js/header.js"></script>
-    <script src="./js/formulario.js"></script>
-    <script src="./js/cadEndereco.js"></script>
+
+        <script src="./js/header.js "></script>
+        <script src="./js/formulario.js "></script>
+        <script src="./js/cadEndereco.js "></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/formulario.js"></script>
+        <script src="./js/login.js"></script>
+        <script src="./js/cadEndereco.js"></script>
+
 
 
 </body>

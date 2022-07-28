@@ -32,10 +32,8 @@
 
             <ul class="nav-list">
                 <li><a href="/">Home</a></li>
-                <li><a href="/">Parceiros</a></li>
-                <li><a href="loginteste.html">Login</a>
-
-                </li>
+                <li><a href="./pontosColeta.html">Parceiros</a></li>
+                <li onclick="abrirLogin()"><a href="#">Login</a></li>
                 <li><a href="/">Contato</a></li>
             </ul>
 
@@ -105,29 +103,73 @@
 
 
             <div id="prev" onclick="prev()">
-                < </div>
-                    <div id="next" onclick="next()"> > </div>
+            </div>
+            <div id="next" onclick="next()"> > </div>
         </section>
 
-        <article class="art">
-            <div class="art2">
-                <h1>Sustentabilidade</h1>
-                <p>
-                    A sustentabilidade no agronegócio passou a ser um dos principais pilares do segmento e, praticamente, uma moeda de troca entre produtores, indústrias do ramo. No entanto, mesmo sendo extremamente visada, a prática ainda não está muito bem estabelecida
-                    no Brasil. Mesmo com tantos desafios, o Brasil já parece se mover e estar pronto para essa nova etapa do agronegócio: mais limpo, mais consciente, mais diverso e mais respeitoso. Com alguma organizações tentando promover essa cultura,
-                    é possível que os nossos recursos naturais não sejam mais extintos ou entrem em escassez.
-                </p>
-            </div>
-            <div class="art2">
-                <h1>Inovação</h1>
-                <p>
-                    A Organização das Nações Unidas estima que a população mundial atingirá cerca de 10 bilhões de pessoas, em 2050. Quem alimentará esse enorme contingente de humanos e que continua crescendo? Certamente será o agricultor. Mas ele precisará fazê-lo com o
-                    mínimo impacto sobre a natureza, pois a sociedade está cada vez mais crítica sobre os potenciais danos ambientais que a agricultura pode causar. Nesse momento entra a INOVAÇÃO no agronegócio, com investimento em adubos orgânicos visando
-                    sempre a forma correta de utilizar os resíduos na produção do adubo, contribuindo assim com meio ambiente e com mínimo de desperdício!
-                </p>
-            </div>
-        </article>
+            
+        <div class="modalLogin" id="modalLogin">
+                        
+            <div class="modalInternLogin" id="modalInternLogin">
 
+                <div class="fechar" onclick="fecharLogin()">✘</div>           
+                
+                <h2>Realize o login para continuar!</h2> <br>
+
+                <label for="login">Login:</label>
+                <input type="text" id="campoLogin" name="login" placeholder="exemplo@email.com" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="campoPassword" name="senha" required>
+
+                <input type="submit" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin()">
+            </div>
+        </div>
+
+        <article class="art">
+
+           
+                <div class="art2" id="art2esq">
+                    <div class="textoCard"></div>
+                        <h1>Sustentabilidade</h1>
+                        <p class="textoArtigo">
+                            A sustentabilidade no agronegócio passou a ser um dos principais pilares do segmento e,
+                            praticamente, uma moeda de troca entre produtores, indústrias do ramo.
+                            No entanto, mesmo sendo extremamente visada, a prática ainda não está muito bem estabelecida no
+                            Brasil.<strong id="leiaMais1">(Leia mais..)</strong></p>
+                            <p class="textoArtigo" id="textoArtigoHidden1"> Mesmo com tantos desafios, o Brasil já parece se mover e estar pronto para essa nova etapa do
+                            agronegócio: mais limpo, mais consciente, mais diverso e mais respeitoso. Com alguma organizações
+                            tentando promover essa cultura, é possível que os nossos recursos naturais não sejam mais extintos
+                            ou entrem em escassez.
+                            
+                        </p>
+                        <strong id="fecharLeiaMais1">(Fechar)</strong>
+                    </div>
+                </div>
+           
+            <div class="art2" id="art2dir">
+                
+                <div class="textoCard">
+
+                    <h1>Desenvolvimento Sustentável</h1>
+                    
+                    <p class="textoArtigo">
+                        A Organização das Nações Unidas estima que a população mundial atingirá cerca de 10 bilhões de
+                        pessoas, em 2050. Quem alimentará esse enorme contingente de humanos e que continua crescendo?
+                        Certamente será o agricultor. <strong id="leiaMais2">(Leia mais..)</strong></p>
+                        <p class="textoArtigo" id="textoArtigoHidden2"> Mas ele precisará fazê-lo com o mínimo impacto sobre a natureza, pois
+                        a sociedade está cada vez mais crítica sobre os potenciais danos ambientais que a agricultura pode
+                        causar.
+                        Nesse momento entra a INOVAÇÃO no agronegócio, com investimento em adubos orgânicos visando sempre a
+                        forma correta de utilizar os resíduos
+                        na produção do adubo, contribuindo assim com meio ambiente e com mínimo de desperdício! 
+                    </p>
+                    <strong id="fecharLeiaMais2">(Fechar)</strong>
+                </div>
+
+            </div>
+        
+        </article>
 
         <div class="texto-inicial">
 
@@ -154,7 +196,6 @@
             </div>
         </div>
 
-
         <div class="texto-impacto">
             <h1>O futuro depende de nós!</h1>
             <h2>Principais fontes de <b>desperdício</b> e perdas de alimentos:</h2>
@@ -165,40 +206,35 @@
 
         </div>
 
-
     </main>
-
 
     <div class="formulario-modal">
         <form>
             <div class="form-doador">
 
-                
                 <div class="fechar" onclick="fechar()">✘</div>
 
-                
                 <h2>Cadastre-se!</h2>
-                <input type="radio" id="doador" class="coletor_doador" name="col_doa" value="doador"> 
+                <input type="radio" id="doador" class="coletor_doador" name="col_doa" value="doador" checked>
                 <label for="doador" class="radio"> Doador Parceiro</label>
-                
-                <input type="radio" id="coletor" class="coletor_doador" name="col_doa" value="coletor"> 
 
+                <input type="radio" id="coletor" class="coletor_doador" name="col_doa" value="coletor">
                 <label for="coletor" class="radio"> Coletor </label>
 
-                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo*" required>
 
-                <input type="number" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ" required>
+                <input type="number" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ*" required>
 
-                <label for="login">Login:</label>
+                <label for="login">Login:*</label>
                 <input type="email" id="email" name="login" placeholder="exemplo@email.com" required>
 
-                <label for="senha">Senha:</label>
+                <label for="senha">Senha:*</label>
                 <input type="password" id="senha" name="senha" required>
 
-                <label for="telefone">Telefone:</label>
-                <input type="number" id="modelo" name="telefone" required>
+                <label for="telefone">Telefone:*</label>
+                <input type="number" id="telefone" name="telefone" required>
 
-                <label for="area">Área de atuação:</label>
+                <label for="area">Área de atuação:*</label>
                 <select id="areaAtuacao">
                     <option value="varejo" selected>Varejo</option>
                     <option value="supermercado">Supermercado</option>
@@ -209,14 +245,15 @@
                     <option value="outros">Outros</option>
                 </select>
 
-                <input type="submit" name="Enviar" onclick="fetchApiSubmit(); fechar();">
+                <input type="button" value="Enviar" name="Enviar" onclick="fetchApiSubmit(); fechar();">
 
             </div>
         </form>
     </div>
 
-
-
+    <div id="voltarTopo">
+        <a href="#" id="subir"><img src="./Imagens/img tratadas/icons/seta-para-cima.png" alt=""></a>
+    </div>
     <footer>
 
         <div class="coluna" id="col1">
@@ -268,10 +305,12 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/formulario.js"></script>
+    <script src="./js/login.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/cadUsers.js"></script>
-   <!--  <script src="./js/login.js"></script> -->
-
+    <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/botaoTopo.js"></script>
 
 </body>
 
