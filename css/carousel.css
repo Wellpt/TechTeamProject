@@ -7,7 +7,7 @@
 
 .containerproje {
   position: relative;
-  margin-top:5px ;
+  margin-top: 5px;
 }
 
 .containerproje .slide-container .slide {
@@ -74,7 +74,7 @@
 }
 
 .containerproje .slide-container:nth-child(1) .slide {
-  background: url(../Imagens/Carrousel/img1.jpeg);
+  background: url(../Imagens/carousel/img001.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -82,7 +82,7 @@
 }
 
 .containerproje .slide-container:nth-child(2) .slide {
-  background: url(../imagens/Carrousel/img2.jpeg);
+  background: url(../Imagens/carousel/img1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -90,21 +90,21 @@
 }
 
 .containerproje .slide-container:nth-child(3) .slide {
-  background: url(../Imagens/Carrousel/img3.jpeg);
+  background: url(../Imagens/carousel/img2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 .containerproje .slide-container:nth-child(4) .slide {
-  background: url(../Imagens/Carrousel/img4.jpeg);
+  background: url(../Imagens/carousel/img3.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 .containerproje .slide-container:nth-child(5) .slide {
-  background: url(../Imagens/Carrousel/img5.jpeg);
+  background: url(../Imagens/carousel/img4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
