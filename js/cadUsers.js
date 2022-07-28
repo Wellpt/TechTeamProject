@@ -20,7 +20,16 @@ function fetchApiSubmit() {
     const cpfCnpj = document.querySelector('#cpfCnpj').value;
     const telefone = document.querySelector('#telefone').value;
     const areaAtuacao = document.querySelector('#areaAtuacao').value;
-    const id_coletor_doador = document.querySelector('.coletor_doador').value;
+    let id_coletor_doador;
+    let coletorChecked = document.querySelector('#coletor');
+    let doadorChecked = document.querySelector('#doador');
+
+    if (coletorChecked.checked) {
+        id_coletor_doador = coletorChecked.value;
+    } else {
+        id_coletor_doador = doadorChecked.value;
+    }
+
     const update = {
         nome: nome,
         cpfCnpj: cpfCnpj,
