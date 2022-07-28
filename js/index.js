@@ -31,3 +31,11 @@ closeText2.addEventListener('click', () => {
     divArt2dir.style.height = '35vh';
     closeText2.style.display = 'none';
 });
+
+
+//LIMPA FORMULÁRIO DE CONTATO APÓS ENVIO
+window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName("form")) {
+        form.reset();
+    }
+};
