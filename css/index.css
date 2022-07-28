@@ -26,7 +26,9 @@ h1 {
 p {
     text-align: center;
 }
- /*VERIFICAR SE ESTÀ SENDO UTILIZADO
+
+
+/*VERIFICAR SE ESTÀ SENDO UTILIZADO
 .cards1 img {
     display: inline-block;
     justify-content: center;
@@ -46,6 +48,7 @@ section {
     align-items: center;
     justify-content: center;
 }
+
 
 /*VERIFICAR SE ESTÁ SENDO USADO
 .texto-inicial {
@@ -81,11 +84,13 @@ section {
 }
 
 .texto-impacto p {
-    text-align: left;
+    text-align: center;
+    padding: 10px;
 }
 
 .texto-impacto h2 {
     text-align: center;
+    padding: 10px;
 }
 
 .btn {
@@ -135,7 +140,7 @@ section {
 }
 
 .gallery-container .gallery-items a {
-    background-color:#78A614;
+    background-color: #78A614;
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -162,41 +167,45 @@ section {
     padding: 6% 2%;
 }
 
-.textoArtigo{
+.textoArtigo {
     margin-top: 2%;
     text-align: left;
 }
-#leiaMais1{
+
+#leiaMais1 {
     cursor: pointer;
 }
-#leiaMais2{
+
+#leiaMais2 {
     cursor: pointer;
 }
-#fecharLeiaMais1{
+
+#fecharLeiaMais1 {
     display: none;
     cursor: pointer;
 }
-#fecharLeiaMais2{
+
+#fecharLeiaMais2 {
     display: none;
     cursor: pointer;
 }
 
 .art2 {
     padding: 1% 4%;
-    width: 100%;   
+    width: 100%;
     border-left: rgb(115, 115, 117) 2px solid;
     border-right: rgb(115, 115, 117) 2px solid;
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
     transition: transform .5s linear;
-  
 }
 
-#textoArtigoHidden2{
-display: none;
+#textoArtigoHidden2 {
+    display: none;
 }
-#textoArtigoHidden1{
-display: none;
+
+#textoArtigoHidden1 {
+    display: none;
 }
 
 
@@ -217,13 +226,11 @@ display: none;
 /*Responsividade desktop*/
 
 @media (min-width: 640px) {
-   .art {
-    display: flex;
-   }
-
-   .art2 {
-    width: 49%;
-    margin-bottom: 20px;
-   }
+    .art {
+        display: flex;
+    }
+    .art2 {
+        width: 49%;
+        margin-bottom: 20px;
+    }
 }
-
