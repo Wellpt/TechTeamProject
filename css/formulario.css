@@ -1,21 +1,66 @@
+/*Estilos gerais formularios*/
 
-/*Estilos do formulário de cadastro home modal */
+input {
+    width: 100%;
+    font-size: 1em;
+    height: 35px;
+    border: 1px solid #3E5902;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 
-.formulario-modal, .modal-doacao{
+select {
+    font-size: 1em;
+    width: 200px; 
+    height: 40px;
+    padding: 5px;
+}
+
+label {
+    font-size: 1.2em;
+    color: rgba(3, 3, 3, 0.993);
+}
+
+
+/* Configuração de posicionamento dos elementos modal*/
+
+.formulario-modal, 
+.modal-doacao,
+.modalLogin {
     position: absolute;
-    display: none;
     border: 2px solid #3E5902;
     background-color: #e3f4d7;
     border-radius: 20px;
     width: 80%;
     height: auto;
-    top: 70%;
-    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     animation: animatemodal;
     animation-duration: 800ms;
 }
+
+.formulario-modal{ 
+    display: none;   
+    top: 60%;
+    left: 50%;
+
+}
+
+.modal-doacao{
+    display: none;    
+    top: 70%;
+    left: 50%;
+}
+
+.modalLogin{
+    display: none;    
+    top: 50%;
+    left: 50%;
+}
+
+/*Estilos do formulário de cadastro usuário */
 
 .form-doador {
     width: 100%;
@@ -72,30 +117,6 @@
     border-radius: 50%;
 }
 
-/*Estilos gerais formulario*/
-
-input {
-    width: 100%;
-    font-size: 1em;
-    height: 35px;
-    border: 1px solid #3E5902;
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-select {
-    font-size: 1em;
-    width: 200px; 
-    height: 40px;
-    padding: 5px;
-}
-
-label {
-    font-size: 1.2em;
-    color: rgba(3, 3, 3, 0.993);
-}
 
 /*Estilos formulário coleta*/
 
@@ -116,33 +137,19 @@ label {
 
 /* Estilos modal login */
 
-.modalLogin{
-    position: absolute;
-    display: none;
-    border: 2px solid #3E5902;
-    background-color: #e3f4d7;
-    border-radius: 20px;
-    width: 80%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    animation: animatemodal;
-    animation-duration: 800ms;
-
-}
-
 .modalInternLogin{
     width: 100%; 
     flex-direction: column; 
     padding: 20px;
 }
 
+/*Responsicidade desktop*/
 
 @media (min-width:640px) {  
       
-    .form-doador [type=submit], .form-coleta [type=submit]{
+    .form-doador [type=submit], 
+    .form-coleta [type=submit],
+    .modalLogin [type=submit] {
         width: 180px;
     } 
 

@@ -36,3 +36,17 @@ body {
 .box:hover {
     opacity: 1.0;
 }
+
+button{
+    display: block;
+    cursor: pointer;
+    background-color: #618c03;
+    border: 1px solid #618c03;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 0.5em black; 
+}
