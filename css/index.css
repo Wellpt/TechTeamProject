@@ -124,6 +124,7 @@ section {
     background-color: var(--cor-secundaria-success);
 }
 
+
 /*Sessão galeria */
 
 .gallery-container {
@@ -152,15 +153,17 @@ section {
 .gallery-items:hover {
     transform: scale(1.1);
 }
+
 .txtcima {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  background-color: #e3f4d7 ;
-  padding: 10px;
-  margin-right: 20px;
-  border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #e3f4d7;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
+
 
 /* Sessão article */
 
@@ -168,6 +171,7 @@ section {
     display: flex;
     padding: 2%;
 }
+
 .art2 {
     background-color: white;
     width: 50%;
@@ -176,6 +180,7 @@ section {
     flex-grow: 1;
     transition: transform .5s linear;
 }
+
 
 /*seção de cards */
 
@@ -197,8 +202,8 @@ section {
     border-radius: 20px;
     overflow: hidden;
     transition: 0.5s;
-    text-align: center; 
-} 
+    text-align: center;
+}
 
 .container .card img {
     width: 100%;
@@ -256,6 +261,20 @@ section {
 /* Fim sessão de cards */
 
 
+/*Botão Topo*/
+
+#voltarTopo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#subir {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+
 /*Responsividade desktop*/
 
 @media (min-width: 640px) {
@@ -272,6 +291,7 @@ section {
         height: 60%;
     }
 }
+
 
 /* Responsividade para telas maiores
 
