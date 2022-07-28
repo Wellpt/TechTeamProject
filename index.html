@@ -32,10 +32,8 @@
 
             <ul class="nav-list">
                 <li><a href="/">Home</a></li>
-                <li><a href="/">Parceiros</a></li>
-                <li><a href="loginteste.html">Login</a>
-
-                </li>
+                <li><a href="./pontosColeta.html">Parceiros</a></li>
+                <li onclick="abrirLogin()"><a href="#">Login</a></li>
                 <li><a href="/">Contato</a></li>
             </ul>
 
@@ -108,6 +106,25 @@
                 < </div>
                     <div id="next" onclick="next()"> > </div>
         </section>
+
+            
+        <div class="modalLogin" id="modalLogin">
+                        
+            <div class="modalInternLogin" id="modalInternLogin">
+
+                <div class="fechar" onclick="fecharLogin()">✘</div>           
+                
+                <h2>Realize o login para continuar!</h2> <br>
+
+                <label for="login">Login:</label>
+                <input type="text" id="campoLogin" name="login" placeholder="exemplo@email.com" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="campoPassword" name="senha" required>
+
+                <input type="submit" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin()">
+            </div>
+        </div>
 
         <article class="art">
             <div class="art2">
@@ -212,20 +229,20 @@
 
                 <label for="coletor" class="radio"> Coletor </label>
 
-                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo*" required>
 
-                <input type="number" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ" required>
+                <input type="number" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ*" required>
 
-                <label for="login">Login:</label>
+                <label for="login">Login:*</label>
                 <input type="email" id="email" name="login" placeholder="exemplo@email.com" required>
 
-                <label for="senha">Senha:</label>
+                <label for="senha">Senha:*</label>
                 <input type="password" id="senha" name="senha" required>
 
-                <label for="telefone">Telefone:</label>
+                <label for="telefone">Telefone:*</label>
                 <input type="number" id="modelo" name="telefone" required>
 
-                <label for="area">Área de atuação:</label>
+                <label for="area">Área de atuação:*</label>
                 <select id="areaAtuacao">
                     <option value="varejo" selected>Varejo</option>
                     <option value="supermercado">Supermercado</option>
@@ -295,6 +312,7 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/formulario.js"></script>
+    <script src="./js/login.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/cadUsers.js"></script>
    <!--  <script src="./js/login.js"></script> -->
