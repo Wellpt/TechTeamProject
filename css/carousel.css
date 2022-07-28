@@ -40,10 +40,12 @@
 }
 
 .containerproje .slide-container .slide .contentproje p {
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   font-family: "Noto Sans", sans-serif;
+  padding-bottom: 5px;
   width: 40%;
   height: 10%;
 }
