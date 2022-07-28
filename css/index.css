@@ -152,6 +152,15 @@ section {
 .gallery-items:hover {
     transform: scale(1.1);
 }
+.txtcima {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  background-color: #e3f4d7 ;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
 
 /* Sessão article */
 
