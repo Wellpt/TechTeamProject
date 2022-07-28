@@ -73,12 +73,6 @@ section {
     font-weight: bold;
 }
 
-/*CODIGO NÂO UTILIZADO
-.imagens-impactantes {
-    margin-top: 20px;
-    margin-bottom: 20px;
-} */
-
 .texto-impacto {
     justify-content: space-around;
     align-items: center;
@@ -93,11 +87,6 @@ section {
 .texto-impacto h2 {
     text-align: center;
 }
-/* CODIGO NÂO UTILIZADO
-#carrocel2 {
-    width: 400px;
-    height: 350px;
-} */
 
 .btn {
     border: none;
