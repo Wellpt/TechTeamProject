@@ -166,16 +166,48 @@ section {
 
 .art {
     display: flex;
-    padding: 2%;
+    padding: 6% 2%;
+}
+
+.textoArtigo{
+    margin-top: 2%;
+    text-align: left;
+}
+#leiaMais1{
+    cursor: pointer;
+}
+#leiaMais2{
+    cursor: pointer;
+}
+#fecharLeiaMais1{
+    display: none;
+    cursor: pointer;
+}
+#fecharLeiaMais2{
+    display: none;
+    cursor: pointer;
 }
 .art2 {
-    background-color: white;
-    width: 50%;
-    padding: 2%;
+    
+    
+    padding: 1% 4%;
+    width: 50vw;
+    height: 35vh;
+    
+    border-left: rgb(115, 115, 117) 2px solid;
+    border-right: rgb(115, 115, 117) 2px solid;
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
     transition: transform .5s linear;
+  
 }
+#textoArtigoHidden2{
+display: none;
+}
+#textoArtigoHidden1{
+display: none;
+}
+
 
 /*seção de cards */
 
