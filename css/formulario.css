@@ -1,9 +1,9 @@
 
 /*Estilos do formulário de cadastro home modal */
 
-.formulario-modal{
+.formulario-modal, .modalLogin{
     position: absolute;
-    display: block;
+    display: none;
     border: 2px solid #3E5902;
     background-color: #e3f4d7;
     border-radius: 20px;
@@ -112,6 +112,9 @@ label {
 .form-coleta select{
     display: block;
 }
+
+/* Estilos modal login */
+
 
 
 @media (min-width:640px) {  
