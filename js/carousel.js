@@ -13,4 +13,4 @@ function prev() {
   slides[index].classList.add("active");
 }
 
-setInterval(next, 10000);
+setInterval(next, 9000);
