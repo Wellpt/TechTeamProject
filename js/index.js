@@ -27,3 +27,11 @@ closeText2.addEventListener('click', () => {
     text2.style.display = 'none';
     closeText2.style.display = 'none';
 });
+
+
+//LIMPA FORMULÁRIO DE CONTATO APÓS ENVIO
+window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName("form")) {
+        form.reset();
+    }
+};
