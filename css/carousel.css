@@ -11,7 +11,7 @@
 }
 
 .containerproje .slide-container .slide {
-  min-height: 100vh;
+  max-height: 70vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -77,6 +77,7 @@
   background: url(../Imagens/carousel/img001.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
@@ -84,7 +85,8 @@
 .containerproje .slide-container:nth-child(2) .slide {
   background: url(../Imagens/carousel/img1.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
@@ -92,21 +94,24 @@
 .containerproje .slide-container:nth-child(3) .slide {
   background: url(../Imagens/carousel/img2.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
 .containerproje .slide-container:nth-child(4) .slide {
   background: url(../Imagens/carousel/img3.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
 .containerproje .slide-container:nth-child(5) .slide {
   background: url(../Imagens/carousel/img4.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
