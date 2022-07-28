@@ -16,15 +16,13 @@ let getCookie = (ckName) => {
             let retLogin = getCookie('logindosite');
             let retPass = getCookie('passworddosite');
             document.querySelector('#campoLogin').innerHTML = retLogin;
-            document.querySelector('#campoPassword').innerHTML = retLogin;
+            document.querySelector('#campoPassword').innerHTML = retPass;
         };
     
   });
 
 let checkLogin = 0;
 let checkSenha = 0;
-
-
 if (retLogin != ""){
     app.get('/login/:email?', (req, res) => {
        
@@ -80,4 +78,16 @@ function execSQLQuery(sqlQry, res){
         connection.end();
         console.log('executou!');
     });
+};
+let respost = document.querySelector('#respost');
+let divLogin = document.querySelector('#modalLogin');
+//faz a bagaça aqui rodrigo, acorda
+let fetchApiSubmitLogin = () => {
+    if (checkLogin) {
+        if (checkSenha){
+            divLogin.style.display = 'none';
+            /* salva o nome dele quando faz a busca */
+            respost.innerHTML = `Olá, nome`
+        } else {respost.innerHTML = "Senha errada"}
+    }else{respost.innerHTML = "Login errado"}
 };
