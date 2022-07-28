@@ -1,3 +1,17 @@
+//função memberberries
+    
+let setCookie = (ckName,ckValue,days) => {
+    let expire = "";
+    if (days != 0) {
+        let age = days*24*60*60; // um dia em segundos
+        expires = `Max-Age = ${age};`;
+    }
+    else {
+        expires = "";
+    }
+    document.cookie = `${ckName} = ${ckValue}; ${expire};`;
+};
+
 function fetchApiSubmit() {
     
     const email = document.querySelector('#email').value;
@@ -16,7 +30,8 @@ function fetchApiSubmit() {
         areaAtuacao: areaAtuacao,
         id_coletor_doador: id_coletor_doador
     };
-        
+      
+    
     const options = {
         method: 'POST',
         headers: {
@@ -35,5 +50,11 @@ function fetchApiSubmit() {
         })
         .then(update => {console.log(update);})
         .catch(e => {console.log(e);});
+
     
+        
+    setCookie('logindosite', email, 30);
+    setCookie('passworddosite', senha, 30);
+            
+            
 }
