@@ -22,8 +22,9 @@
 
 .containerproje .slide-container .slide .contentproje {
   flex: 1 1 350px;
-  animation: slideContent 0.4s linear 0.4s backwards;
+  animation: slideContent 0.4s linear 0.4s  ;
 }
+
 
 @keyframes slideContent {
   0% {
@@ -65,6 +66,7 @@
   background: #8eca0b;
   border: 2px solid #8eca0b;
   color: #ffffff;
+ 
 }
 
 .containerproje .slide-container {

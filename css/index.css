@@ -48,12 +48,9 @@ section {
 }
 
 .texto-inicial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #3e5902;
 }
 
 .user {
