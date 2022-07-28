@@ -10,25 +10,21 @@ let divArt2dir = document.querySelector('#art2dir');
 read1.addEventListener('click', () => {
     read1.style.display = 'none';
     text1.style.display = 'flex';
-    divArt2esq.style.height = '60vh';
     closeText1.style.display = 'flex';
 });
 read2.addEventListener('click', () => {
     read2.style.display = 'none';
     text2.style.display = 'flex';
-        divArt2dir.style.height = '60vh';
     closeText2.style.display = 'flex';
 });
 closeText1.addEventListener('click', () => {
     read1.style.display = 'flex';
     text1.style.display = 'none';
-    divArt2esq.style.height = '35vh';
     closeText1.style.display = 'none';
 });
 closeText2.addEventListener('click', () => {
     read2.style.display = 'flex';
     text2.style.display = 'none';
-    divArt2dir.style.height = '35vh';
     closeText2.style.display = 'none';
 });
 
