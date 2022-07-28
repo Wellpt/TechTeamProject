@@ -1,15 +1,15 @@
 
 /*Estilos do formulário de cadastro home modal */
 
-.formulario-modal{
-    position: fixed;
+.formulario-modal, .modalLogin{
+    position: absolute;
     display: none;
     border: 2px solid #3E5902;
     background-color: #e3f4d7;
     border-radius: 20px;
-    width: 370px;
+    width: 80%;
     height: auto;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -113,12 +113,18 @@ label {
     display: block;
 }
 
+/* Estilos modal login */
+
 
 @media (min-width:640px) {  
       
     .form-doador [type=submit], .form-coleta [type=submit]{
         width: 180px;
     } 
+
+    .formulario-modal{
+        width: 50%;
+    }
        
    
 }

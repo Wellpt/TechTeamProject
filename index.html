@@ -200,32 +200,33 @@
         <form>
             <div class="form-doador">
 
+                
                 <div class="fechar" onclick="fechar()">✘</div>
 
-                <input type="radio" id="doador" name="col_doa" value="doador">
+                
+                <h2>Cadastre-se!</h2>
+                <input type="radio" id="doador" class="coletor_doador" name="col_doa" value="doador"> 
                 <label for="doador" class="radio"> Doador Parceiro</label>
+                
+                <input type="radio" id="coletor" class="coletor_doador" name="col_doa" value="coletor"> 
 
-                <input type="radio" id="coletor" name="col_doa" value="coletor">
                 <label for="coletor" class="radio"> Coletor </label>
 
                 <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
 
-                <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ" required>
+                <input type="number" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ" required>
 
                 <label for="login">Login:</label>
-                <input type="text" id="login" name="login" placeholder="exemplo@email.com" required>
+                <input type="email" id="email" name="login" placeholder="exemplo@email.com" required>
 
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required>
 
-                <label for="senha">Confirmar Senha:</label>
-                <input type="password" id="senhav" name="senha" required>
-
                 <label for="telefone">Telefone:</label>
-                <input type="text" id="modelo" name="telefone" required>
+                <input type="number" id="modelo" name="telefone" required>
 
                 <label for="area">Área de atuação:</label>
-                <select id="area">
+                <select id="areaAtuacao">
                     <option value="varejo" selected>Varejo</option>
                     <option value="supermercado">Supermercado</option>
                     <option value="hortifruti">Hortifruti</option>
@@ -296,7 +297,7 @@
     <script src="./js/formulario.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/cadUsers.js"></script>
-    <script src="./js/login.js"></script>
+   <!--  <script src="./js/login.js"></script> -->
 
 
 </body>
