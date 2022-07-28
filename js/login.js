@@ -22,25 +22,47 @@ let retPass = "";
         if (getCookie('logindosite') !=''){
              retLogin = getCookie('logindosite');
              retPass = getCookie('passworddosite');
-            document.querySelector('#campoLogin').innerHTML = retLogin;
-            document.querySelector('#campoPassword').innerHTML = retPass;
+            document.querySelector('#campoLogin').innerHTML = "retLogin";
+            document.querySelector('#campoPassword').innerHTML = "retPass";
         };
   
-
+//incluir o envio ao BD pra conferência de login e senha (pode ser um por vez)
 let checkLogin = 0;
 let checkSenha = 0;
-if (retLogin != ""){
-    
-
-};
-
-
-
-
 
     function fetchApiSubmitLogin() {
-        if (checkLogin) {
-            if (checkSenha){
+        
+            const email = document.querySelector('#campoLogin').value;
+            const senha = document.querySelector('#campoPassword').value;
+            
+        
+            const update = {
+                email: email,
+                senha: senha,
+                
+            };
+                
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(update),
+            };
+        
+            fetch("https://web-api-form.herokuapp.com/user", options)
+            .then(data => {
+                if(!data.ok) {
+                    throw Error(data.status);
+                }
+                return data.json();
+            })
+            .then(update => {console.log(update);})
+            .catch(e => {console.log(e);});
+        
+        
+        if (checkLogin === 1) {
+            if (checkSenha === 1){
                divLogin.style.display = 'none';
                respost.innerHTML = `Olá, nome`
             } else {respost.innerHTML = "Senha errada!"}
