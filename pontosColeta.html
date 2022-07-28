@@ -59,7 +59,7 @@
                 <div class="form">  
                     
                     <label for="nomefantasia">Nome fantasia/Razão Social:*</label>    
-                    <input type="text" id="nomefantasia" name="nomefantasia" required> 
+                    <input type="text" id="nome" name="nomefantasia" required> 
                     
                     <p>Endereço pra coleta da doação:</p>
                        
@@ -96,7 +96,7 @@
                         <option value="mensal">Mensal</option>
                     </select>
     
-                    <input type="submit" name="Enviar">
+                    <input type="submit" name="Enviar" onclick="fetchApiSubmit()">
     
                 </div>
             </form>
@@ -144,7 +144,7 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/formulario.js"></script>
-
+    <script src="./js/cadEndereco.js"></script>
 
 
 </body>
