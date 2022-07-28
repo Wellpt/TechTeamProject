@@ -1,74 +1,4 @@
-
-/*Estilos do formulário de cadastro home modal */
-
-.formulario-modal, .modalLogin{
-    position: absolute;
-    display: none;
-    border: 2px solid #3E5902;
-    background-color: #e3f4d7;
-    border-radius: 20px;
-    width: 80%;
-    height: auto;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    animation: animatemodal;
-    animation-duration: 800ms;
-}
-
-.form-doador {
-    width: 100%;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.form-doador [type=radio]{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-}
-
-.radio{
-    display: inline-block;
-    margin-bottom: 5px;    
-}
-
-.form-doador [type=submit] , .form-coleta [type=submit] {
-    display: block;
-    cursor: pointer;
-    background-color: #618c03;
-    border: 1px solid #618c03;
-    height: 40px;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    width: 50%;
-    margin: 20px auto;
-    box-shadow: 0 0 0.5em black;
-}
-
-.form-doador [type=submit]:hover, .form-coleta [type=submit]:hover {
-    opacity: 0.8;
-}
-
-.fechar{
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    right: 0;
-    margin-right: 10px;
-    font-size: 1.2em;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    color: white;
-    background-color: #618c03;
-    border: 1px solid #618c03;
-    border-radius: 50%;
-}
-
-/*Estilos gerais formulario*/
+/*Estilos gerais formularios*/
 
 input {
     width: 100%;
@@ -93,16 +23,108 @@ label {
     color: rgba(3, 3, 3, 0.993);
 }
 
+
+/* Configuração de posicionamento dos elementos modal*/
+
+.formulario-modal, 
+.modal-doacao,
+.modalLogin {
+    position: absolute;
+    border: 2px solid #3E5902;
+    background-color: #e3f4d7;
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    animation: animatemodal;
+    animation-duration: 800ms;
+}
+
+.formulario-modal{ 
+    display: none;   
+    top: 60%;
+    left: 50%;
+
+}
+
+.modal-doacao{
+    display: none;    
+    top: 70%;
+    left: 50%;
+}
+
+.modalLogin{
+    display: none;    
+    top: 50%;
+    left: 50%;
+}
+
+/*Estilos do formulário de cadastro usuário */
+
+.form-doador {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-doador [type=radio]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.radio{
+    display: inline-block;
+    margin-bottom: 5px;    
+}
+
+.form-doador [type=submit] , 
+.form-coleta [type=submit], 
+.modalLogin [type=submit] {
+    display: block;
+    cursor: pointer;
+    background-color: #618c03;
+    border: 1px solid #618c03;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 0.5em black;
+}
+
+.form-doador [type=submit]:hover, 
+.form-coleta [type=submit]:hover,
+.modalLogin [type=submit]:hover {
+    opacity: 0.8;
+}
+
+.fechar{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    background-color: #618c03;
+    border: 1px solid #618c03;
+    border-radius: 50%;
+}
+
+
 /*Estilos formulário coleta*/
 
 .form-coleta{
-    display: none;
-    width: 100%;    
-    background-color: #e3f4d7;
-    flex-direction: column;
-    padding: 20px;    
-    animation: animatemodal;
-    animation-duration: 800ms;
+    width: 100%; 
+    flex-direction: column; 
+    padding: 10px;
+
 }
 
 .form-coleta p{
@@ -115,16 +137,26 @@ label {
 
 /* Estilos modal login */
 
+.modalInternLogin{
+    width: 100%; 
+    flex-direction: column; 
+    padding: 20px;
+}
+
+/*Responsicidade desktop*/
 
 @media (min-width:640px) {  
       
-    .form-doador [type=submit], .form-coleta [type=submit]{
+    .form-doador [type=submit], 
+    .form-coleta [type=submit],
+    .modalLogin [type=submit] {
         width: 180px;
     } 
 
-    .formulario-modal{
+    .formulario-modal, .modal-doacao, .modalLogin{
         width: 50%;
     }
+    
        
    
 }
