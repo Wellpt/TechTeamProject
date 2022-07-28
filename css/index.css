@@ -48,12 +48,9 @@ section {
 }
 
 .texto-inicial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #3e5902;
 }
 
 .user {
@@ -124,6 +121,7 @@ section {
     background-color: var(--cor-secundaria-success);
 }
 
+
 /*Sessão galeria */
 
 .gallery-container {
@@ -135,13 +133,25 @@ section {
 }
 
 .gallery-items {
+    margin: 20px;
     width: 340px;
     height: 340px;
-    border: 10px solid #FFF;
-    box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
     transition: transform .5s linear;
+    box-shadow: 10px 10px 10px #0006;
+    text-align: center;
+    font-size: 20px;
 }
+.gallery-container .gallery-items a {
+    background-color:#78A614;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 
 .gallery-items img {
     width: 100%;
@@ -150,32 +160,58 @@ section {
 }
 
 .gallery-items:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
-.txtcima {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  background-color: #e3f4d7 ;
-  padding: 10px;
-  margin-right: 20px;
-  border-radius: 10px;
-}
+
 
 /* Sessão article */
 
 .art {
     display: flex;
-    padding: 2%;
+    padding: 6% 2%;
 }
+
+.textoArtigo{
+    margin-top: 2%;
+    text-align: left;
+}
+#leiaMais1{
+    cursor: pointer;
+}
+#leiaMais2{
+    cursor: pointer;
+}
+#fecharLeiaMais1{
+    display: none;
+    cursor: pointer;
+}
+#fecharLeiaMais2{
+    display: none;
+    cursor: pointer;
+}
+
 .art2 {
-    background-color: white;
-    width: 50%;
-    padding: 2%;
+    
+    
+    padding: 1% 4%;
+    width: 50vw;
+    height: 35vh;
+    
+    border-left: rgb(115, 115, 117) 2px solid;
+    border-right: rgb(115, 115, 117) 2px solid;
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
     transition: transform .5s linear;
+  
 }
+#textoArtigoHidden2{
+display: none;
+}
+#textoArtigoHidden1{
+display: none;
+}
+
+
 
 /*seção de cards */
 
@@ -197,8 +233,8 @@ section {
     border-radius: 20px;
     overflow: hidden;
     transition: 0.5s;
-    text-align: center; 
-} 
+    text-align: center;
+}
 
 .container .card img {
     width: 100%;
@@ -256,6 +292,20 @@ section {
 /* Fim sessão de cards */
 
 
+/*Botão Topo*/
+
+#voltarTopo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#subir {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+
 /*Responsividade desktop*/
 
 @media (min-width: 640px) {
@@ -272,6 +322,7 @@ section {
         height: 60%;
     }
 }
+
 
 /* Responsividade para telas maiores
 
