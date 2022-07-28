@@ -169,7 +169,6 @@
         
         </article>
 
-
         <div class="texto-inicial">
             <h1 class="reflex">Profissionais transformando seu resíduo orgânico para um futuro melhor.</h1>
             <h1 class="reflex">Transforme seu negócio, transforme o mundo.</h1>
@@ -222,7 +221,6 @@
             </div>
         </div>
 
-
         <div class="texto-impacto">
             <h1>O futuro depende de nós!</h1>
             <h2>Principais fontes de <b>desperdício</b> e perdas de alimentos:</h2>
@@ -233,24 +231,19 @@
 
         </div>
 
-
     </main>
-
 
     <div class="formulario-modal">
         <form>
             <div class="form-doador">
 
-
                 <div class="fechar" onclick="fechar()">✘</div>
 
-
                 <h2>Cadastre-se!</h2>
-                <input type="radio" id="doador" class="coletor_doador" name="col_doa" value="doador">
+                <input type="radio" id="doador" class="coletor_doador" name="col_doa" value="doador" checked>
                 <label for="doador" class="radio"> Doador Parceiro</label>
 
                 <input type="radio" id="coletor" class="coletor_doador" name="col_doa" value="coletor">
-
                 <label for="coletor" class="radio"> Coletor </label>
 
                 <input type="text" id="nome" name="nome" placeholder="Nome Completo*" required>
@@ -264,7 +257,7 @@
                 <input type="password" id="senha" name="senha" required>
 
                 <label for="telefone">Telefone:*</label>
-                <input type="number" id="modelo" name="telefone" required>
+                <input type="number" id="telefone" name="telefone" required>
 
                 <label for="area">Área de atuação:*</label>
                 <select id="areaAtuacao">
@@ -277,7 +270,7 @@
                     <option value="outros">Outros</option>
                 </select>
 
-                <input type="submit" name="Enviar" onclick="fetchApiSubmit(); fechar();">
+                <input type="button" value="Enviar" name="Enviar" onclick="fetchApiSubmit(); fechar();">
 
             </div>
         </form>
@@ -344,8 +337,6 @@
     <script src="./js/login.js"></script>
     <script src="./js/botaoTopo.js"></script>
 
-
- 
 </body>
 
 </html>
