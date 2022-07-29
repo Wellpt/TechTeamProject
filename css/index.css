@@ -79,8 +79,8 @@ section {
 .texto-impacto {
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
-    padding: 30px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .texto-impacto p {
@@ -88,7 +88,8 @@ section {
     padding: 10px;
 }
 
-.texto-impacto h2 {
+.texto-impacto h2, 
+.texto-impacto h1 {
     text-align: center;
     padding: 10px;
 }
