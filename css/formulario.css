@@ -13,7 +13,7 @@ input {
 
 select {
     font-size: 1em;
-    width: 200px; 
+    width: 200px;
     height: 40px;
     padding: 5px;
 }
@@ -26,7 +26,7 @@ label {
 
 /* Configuração de posicionamento dos elementos modal*/
 
-.formulario-modal, 
+.formulario-modal,
 .modal-doacao,
 .modalLogin {
     position: absolute;
@@ -41,24 +41,24 @@ label {
     animation-duration: 800ms;
 }
 
-.formulario-modal{ 
-    display: none;   
+.formulario-modal {
+    display: none;
     top: 60%;
     left: 50%;
-
 }
 
-.modal-doacao{
-    display: none;    
+.modal-doacao {
+    display: none;
     top: 70%;
     left: 50%;
 }
 
-.modalLogin{
-    display: none;    
+.modalLogin {
+    display: none;
     top: 50%;
     left: 50%;
 }
+
 
 /*Estilos do formulário de cadastro usuário */
 
@@ -68,40 +68,49 @@ label {
     padding: 10px;
 }
 
-.form-doador [type=radio]{
+.form-doador [type=radio] {
     display: inline-block;
     width: 20px;
     height: 20px;
 }
 
-.radio{
+.radio {
     display: inline-block;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
 }
 
-.form-doador [type=button] , 
-.form-coleta [type=submit], 
+.form-doador [type=button],
+.form-coleta [type=submit],
 .modalLogin [type=submit] {
     display: block;
     cursor: pointer;
     background-color: #618c03;
-    border: 1px solid #618c03;
+    border: 1px solid transparent;
+    border-bottom: 0.5px solid #618c03;
     height: 40px;
     font-size: 1em;
     font-weight: bold;
     text-align: center;
     width: 50%;
     margin: 20px auto;
-    box-shadow: 0 0 0.5em black;
+    box-shadow: 0.4em 0.4em 0.4em black;
 }
 
-.form-doador [type=submit]:hover, 
+.form-doador [type=submit]:hover,
 .form-coleta [type=submit]:hover,
 .modalLogin [type=submit]:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-.fechar{
+.form-doador [type=button]:active,
+.form-coleta [type=submit]:active,
+.modalLogin [type=submit]:active {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+.fechar {
     display: inline-block;
     position: absolute;
     text-align: center;
@@ -120,51 +129,50 @@ label {
 
 /*Estilos formulário coleta*/
 
-.form-coleta{
-    width: 100%; 
-    flex-direction: column; 
+.form-coleta {
+    width: 100%;
+    flex-direction: column;
     padding: 10px;
-
 }
 
-.form-coleta p{
+.form-coleta p {
     padding-bottom: 20px;
 }
 
-.form-coleta select{
+.form-coleta select {
     display: block;
 }
 
+
 /* Estilos modal login */
 
-.modalInternLogin{
-    width: 100%; 
-    flex-direction: column; 
+.modalInternLogin {
+    width: 100%;
+    flex-direction: column;
     padding: 20px;
 }
 
+
 /*Responsicidade desktop*/
 
-@media (min-width:640px) {  
-      
-    .form-doador [type=submit], 
+@media (min-width:640px) {
+    .form-doador [type=submit],
     .form-coleta [type=submit],
     .modalLogin [type=submit] {
         width: 180px;
-    } 
-
-    .formulario-modal, .modal-doacao, .modalLogin{
+    }
+    .formulario-modal,
+    .modal-doacao,
+    .modalLogin {
         width: 50%;
     }
-    
-       
-   
 }
- 
+
 @keyframes animatemodal {
-    from{opacity: 1;}
-        
-    
-    from {opacity: 0;}
-    
+    from {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
 }
