@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/formulario.css">
     <link rel="stylesheet" href="./css/pontosColeta.css">
+    <link rel="icon" href="./Imagens/img tratadas/icons/logo2.png" type="image/x-icon">
 
-
-
-    <title>Resíduos Orgânicos</title>
+    <title>Sustenta-Tech</title>
 
 </head>
 
@@ -30,11 +29,11 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="./cadastroPonto.html">Cadastrar</a></li>
-                <li onclick="abrirLogin()"><a href="#">Login</a></li>
-                <li><a href="#footer">Contato</a></li>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="#"><li>Parceiros</li></a>
+                <a href="./cadastroPonto.html"><li>Cadastrar</li></a>
+                <a href="#"><li onclick="abrirLogin()">Login</li></a>
+                <a href="#footer-content"><li>Contato</li></a>
             </ul>
 
         </nav>
@@ -58,7 +57,7 @@
                 <label for="senha">Senha:</label>
                 <input type="password" id="campoPassword" name="senha" required>
 
-                <input type="button" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin(); fecharLogin()">
+                <input type="button" name="Entrar" class="bntproj" value="Entrar" id="btnEntrar" onclick="fetchApiSubmitLogin(); fecharLogin()">
             </div>
         </div>
         <div class="searchCity"><h3>Encontre estabelecimentos parceiros na sua região</h3>

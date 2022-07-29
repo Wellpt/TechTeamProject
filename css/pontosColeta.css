@@ -139,9 +139,7 @@ h1 {
     padding: 10px;
     flex-wrap: wrap;
     background-color: rgb(242, 242, 242);
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 auto;
     padding-top: 20px;
     width: 100%;
 }
@@ -157,7 +155,6 @@ h1 {
 }
 
 #carta {
-    width: 90%;
     height: 90%;
     transform-style: preserve-3d;
     transition: all 1.0s ease;

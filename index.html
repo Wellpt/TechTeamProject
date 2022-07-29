@@ -10,18 +10,16 @@
     <link rel="stylesheet" href="./css/formulario.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="icon" href="./Imagens/img tratadas/icons/logo2.png" type="image/x-icon">
 
-
-
-    <title>Resíduos Orgânicos</title>
+    <title>Sustenta-Tech</title>
 
 </head>
-
 
 <body>
     <header>
         <nav class="menu">
-            <a class="logo" href="/">LOGO</a>
+            <a class="logo" href="/">Sustenta-Tech</a>
 
             <div class="mobile-menu">
                 <div class="line1"></div>
@@ -31,11 +29,11 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./parceiros.html">Parceiros</a></li>
-                <li><a href="./cadastroPonto.html">Cadastrar</a></li>
-                <li onclick="abrirLogin()"><a href="#">Login</a></li>
-                <li><a href="#footer">Contato</a></li>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./parceiros.html"><li>Parceiros</li></a>
+                <a href="./cadastroPonto.html"><li>Cadastrar</li></a>
+                <a href="#"><li onclick="abrirLogin()">Login</li></a>
+                <a href="#footer-content"><li>Contato</li></a>
             </ul>
 
         </nav>
@@ -122,7 +120,7 @@
                 <label for="senha">Senha:</label>
                 <input type="password" id="campoPassword" name="senha" required>
 
-                <input type="button" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin(); fecharLogin()">
+                <input type="button" name="Entrar" class="bntproj" value="Entrar" id="btnEntrar" onclick="fetchApiSubmitLogin(); fecharLogin()">
             </div>
         </div>
 
@@ -182,9 +180,7 @@
         </div>
 
         <div class="gallery-container">
-            <div class="gallery-items"><a
-                    href="https://emasjr.com.br/blog/2021/04/14/compostagem-entenda-o-que-e-e-o-que-sao-utc/"
-                    target="_blank">O que é Compostagem?</a>
+            <div class="gallery-items"><a href="https://emasjr.com.br/blog/2021/04/14/compostagem-entenda-o-que-e-e-o-que-sao-utc/" target="_blank">O que é Compostagem?</a>
                 <img src="./Imagens/Compostagem tipos/2.jpg" alt="compostagem">
             </div>
 
@@ -310,7 +306,6 @@
     <script src="./js/carousel.js"></script>
     <script src="./js/cadUsers.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/login.js"></script>
     <script src="./js/botaoTopo.js"></script>
     <script src="./js/getInfoPontoColeta.js"></script>
 

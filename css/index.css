@@ -27,17 +27,6 @@ p {
     text-align: center;
 }
 
-
-/*VERIFICAR SE ESTÀ SENDO UTILIZADO
-.cards1 img {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    width: 30%;
-    margin-top: 40px;
-} */
-
 section .botao {
     background-color: #618c03;
     margin: 20px;
@@ -48,14 +37,6 @@ section {
     align-items: center;
     justify-content: center;
 }
-
-
-/*VERIFICAR SE ESTÁ SENDO USADO
-.texto-inicial {
-    width: 100%;
-    height: 100vh;
-    background-color: #3e5902;
-} */
 
 .user {
     color: #78A614;

@@ -50,7 +50,7 @@ function fetchApiSubmit() {
     };
    
     
-        fetch(`https://web-api-form.herokuapp.com/user`, options)
+    fetch(`https://web-api-form.herokuapp.com/user`, options)
         .then(data => {
             if(!data.ok) {
                 throw Error(data.status);

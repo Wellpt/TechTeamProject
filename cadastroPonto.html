@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/formulario.css">
     <link rel="stylesheet" href="./css/pontosColeta.css">
+    <link rel="icon" href="./Imagens/img tratadas/icons/logo2.png" type="image/x-icon">
 
-
-
-    <title>Resíduos Orgânicos</title>
+    <title>Sustenta-Tech</title>
 
 </head>
 
@@ -20,7 +19,7 @@
 <body>
     <header>
         <nav class="menu">
-            <a class="logo" href="/">Logo</a>
+            <a class="logo" href="/">Sustenta-Tech</a>
 
             <div class="mobile-menu">
                 <div class="line1"></div>
@@ -30,11 +29,11 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./parceiros.html">Parceiros</a></li>
-                <li><a href="#">Cadastrar</a></li>
-                <li onclick="abrirLogin()"><a href="#">Login</a></li>
-                <li><a href="#footer">Contato</a></li>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./parceiros.html"><li>Parceiros</li></a>
+                <a href="#"><li>Cadastrar</li></a>
+                <a href="#"><li onclick="abrirLogin()">Login</li></a>
+                <a href="#footer-content"><li>Contato</li></a>
             </ul>
 
         </nav>
@@ -94,7 +93,7 @@
 
 
 
-                    <input type="button" name="Enviar" onclick="fetchApiSubmit(), fechardoacao()">
+                    <input type="button" name="Enviar" value="Enviar" onclick="fetchApiSubmit(), fechardoacao()">
 
                 </div>
             </div>
@@ -160,8 +159,6 @@
         <script src="./js/login.js"></script>
         <script src="./js/cadEndereco.js"></script>
         <script src="./js/getInfoPontoColeta.js"></script>
-
-
 
 </body>
 
