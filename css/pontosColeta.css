@@ -148,7 +148,6 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    
 }
 
 .texto-depoimento h1 {
@@ -171,4 +170,18 @@ button {
     width: 50%;
     margin: 20px auto;
     box-shadow: 0 0 0.5em black;
+}
+
+
+/*Botão Topo*/
+
+#voltarTopo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#subir {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
