@@ -1,5 +1,6 @@
 function fetchApiSubmit() {
     const nome = document.querySelector('#nome').value;
+    const telefone = document.querySelector('#telefone').value;
     const cep = document.querySelector('#cep').value;
     const bairro = document.querySelector('#bairro').value;
     const logradouro = document.querySelector('#logradouro').value;
@@ -11,6 +12,7 @@ function fetchApiSubmit() {
     
     const update = {
         nome: nome,
+        telefone: telefone,
         logradouro: logradouro,
         numero: numero,
         bairro: bairro,
