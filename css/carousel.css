@@ -7,7 +7,7 @@
 
 .containerproje {
   position: relative;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .containerproje .slide-container .slide {
@@ -22,9 +22,8 @@
 
 .containerproje .slide-container .slide .contentproje {
   flex: 1 1 350px;
-  animation: slideContent 0.4s linear 0.4s  ;
+  animation: slideContent 0.4s linear 0.4s;
 }
-
 
 @keyframes slideContent {
   0% {
@@ -61,14 +60,13 @@
   border: 2px solid #3e5902;
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
-  transition: .5s ease all;
+  transition: 0.5s ease all;
 }
 
 .containerproje .slide-container .slide .contentproje .bntproj:hover {
   background: #8eca0b;
   border: 2px solid #8eca0b;
   color: #ffffff;
- 
 }
 
 .containerproje .slide-container {
@@ -80,7 +78,8 @@
 }
 
 .containerproje .slide-container:nth-child(1) .slide {
-  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(../Imagens/carousel/img002.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Imagens/carousel/img002.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,34 +88,38 @@
 }
 
 .containerproje .slide-container:nth-child(2) .slide {
-  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(../Imagens/carousel/img1.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Imagens/carousel/img1.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;
 }
 
 .containerproje .slide-container:nth-child(3) .slide {
-  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(../Imagens/carousel/img2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Imagens/carousel/img2.jpg);
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;
 }
 .containerproje .slide-container:nth-child(4) .slide {
-  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(../Imagens/carousel/img3.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Imagens/carousel/img3.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;
 }
 .containerproje .slide-container:nth-child(5) .slide {
-  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(../Imagens/carousel/img4.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Imagens/carousel/img4.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;
@@ -128,7 +131,7 @@
   top: 50%;
   transform: translateY(-50%);
   color: #ffffff;
-  background: #3e5902;
+  background: transparent;
   height: 50px;
   width: 50px;
   line-height: 50px;
@@ -137,7 +140,7 @@
   cursor: pointer;
   font-weight: bolder;
   border-radius: 50px;
-  transition: .5s ease all;
+  transition: 0.5s ease all;
 }
 
 .containerproje #prev:hover,
