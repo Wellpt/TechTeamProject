@@ -44,59 +44,6 @@
             <div class="box">
             </div>
         </div>
-
-        <!-- <div class="texto-cadastro">
-            <h2>Cadastre um ponto de coleta de resíduos orgânicos!</h2>
-        </div>
-
-        <button onclick="abrirdoacao()">Cadastrar Ponto de Coleta</button>
-
-        <div class="modal-doacao">
-
-            <div class="form-coleta">
-
-                <div class="fechar" onclick="fechardoacao()">✘</div>
-                <h2>Dados do ponto de coleta:</h2> <br>
-
-                <label for="nomefantasia">Nome fantasia/Razão Social:*</label>
-                <input type="text" id="nome" name="nomefantasia" placeholder="Mercado do José" required>
-
-                <label for="logradouro">Rua:*</label>
-                <input type="text" id="logradouro" name="logradouro" required>
-
-                <label for="numero">Número:*</label>
-                <input type="number" id="numero" name="numero" required>
-
-                <label for="bairro">Bairro:*</label>
-                <input type="text" id="bairro" name="bairro" required>
-
-                <label for="cep">CEP para retirada:*</label>
-                <input type="number" id="cep" name="cep" placeholder="12345678" required>
-
-                <label for="cidade">Cidade:*</label>
-                <input type="text" id="cidade" name="cidade" required>
-
-                <label for="estado">Estado:*</label>
-                <input type="text" id="estado" name="estado" required>
-
-                <label for="data_coleta">Dia e horário da coleta:*</label>
-                <input type="text" id="data_coleta" name="data_coleta" placeholder="Ex: toda quinta-feira às 09:00 horas" required>
-
-                <label for="quantidade">Quantidade(kg):</label>
-                <input type="number" id="quantidade" name="quantidade">
-
-                <select id="frequencia">
-                    <option value="unica" selected>Única</option>
-                    <option value="semanal">Semanal</option>
-                    <option value="mensal">Mensal</option>
-                </select>
-
-                <input type="submit" name="Enviar" onclick="fetchApiSubmit()">
-
-            </div>
-        </div> -->
-
-
         <div class="modalLogin" id="modalLogin">
 
             <div class="modalInternLogin" id="modalInternLogin">
@@ -111,14 +58,23 @@
                 <label for="senha">Senha:</label>
                 <input type="password" id="campoPassword" name="senha" required>
 
-                <input type="submit" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin()">
+                <input type="button" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin(); fecharLogin()">
             </div>
         </div>
 
         <section class="listaPontosdeColeta">
+
             <div class="titulo">
                 <h2>Encontre estabelecimentos parceiros na sua região</h2>
+                <h3>Pesquise pelo nome da sua cidade.</h3>
+                <div class="pesquisa" style="width: 600px;margin:0 auto;">
+                    <input type="text" id="nomeCidadePesquisa" placeholder="Cidade" required>
+                    <input type="button" id="btnPesquisa" value="Pesquisar        &#128269;" onclick="fetchApiPesquisa()">
+                </div>
             </div>
+
+            
+            <ul class="ul-vazia retangEnderecos"></ul>
 
             <div class="retangEnderecos">
                 <p>Nome: Fulano de talpassado por variável</p>
@@ -149,9 +105,6 @@
 
     </main>
 
-
-
-
     <div class="texto-depoimento">
         <h2>Depoimentos dos parceiros</h2>
 
@@ -176,9 +129,6 @@
 
             </div>
         </div>
-
-
-
 
         <div id="container">
             <div id="carta">
