@@ -80,8 +80,9 @@ label {
 }
 
 .form-doador [type=button],
-.form-coleta [type=submit],
-.modalLogin [type=submit] {
+.form-coleta [type=button],
+.modalLogin [type=button],
+.sections [type=button]{
     display: block;
     cursor: pointer;
     background-color: #618c03;
@@ -96,15 +97,17 @@ label {
     box-shadow: 0.4em 0.4em 0.4em black;
 }
 
-.form-doador [type=submit]:hover,
-.form-coleta [type=submit]:hover,
-.modalLogin [type=submit]:hover {
+.form-doador [type=button]:hover,
+.form-coleta [type=button]:hover,
+.modalLogin [type=button]:hover,
+.sections [type=button]:hover {
     opacity: 0.9;
 }
 
 .form-doador [type=button]:active,
-.form-coleta [type=submit]:active,
-.modalLogin [type=submit]:active {
+.form-coleta [type=button]:active,
+.modalLogin [type=button]:active,
+.sections [type=button]:active {
     box-shadow: none;
     position: relative;
     top: 5px;
@@ -156,10 +159,11 @@ label {
 /*Responsicidade desktop*/
 
 @media (min-width:640px) {
-    .form-doador [type=submit],
-    .form-coleta [type=submit],
-    .modalLogin [type=submit] {
-        width: 180px;
+    .form-doador [type=button],
+    .form-coleta [type=button],
+    .modalLogin [type=button],
+    .sections [type=button] {
+        width: 200px;
     }
     .formulario-modal,
     .modal-doacao,
