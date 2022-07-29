@@ -11,7 +11,7 @@ body {
     background-color: black;
 }
 
-h2 {    
+h2 {
     text-align: center;
     color: #618c03;
     font-size: 2.2em;
@@ -54,10 +54,11 @@ button {
     border-radius: 20px;
 }
 
+
 /* Estilos para a lista de cadastrados */
 
-.listaPontosdeColeta{
-    display:flex;
+.listaPontosdeColeta {
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
@@ -66,7 +67,8 @@ button {
     background-color: #3E5902;
     height: auto;
 }
-.retangEnderecos{
+
+.retangEnderecos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,32 +79,33 @@ button {
     height: 250px;
 }
 
-.titulo{
+.titulo {
     display: block;
     width: 100%;
     text-align: center;
 }
 
-.titulo h2{
+.titulo h2 {
     color: white;
     padding-bottom: 30px;
 }
 
-.retangEnderecos img{
+.retangEnderecos img {
     width: 50px;
     height: 50px;
     padding-left: 10px;
 }
 
-.retangEnderecos p{
+.retangEnderecos p {
     padding: 10px;
 }
 
-#btnnConect{
+#btnnConect {
     right: 5px;
-    width:3px;
+    width: 3px;
     height: 3px;
 }
+
 
 /*Estilos cards Depoimento*/
 
@@ -216,7 +219,6 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    
 }
 
 .texto-depoimento h1 {
@@ -227,3 +229,16 @@ h1 {
     text-decoration: inset 0 0 1em rgba(188, 231, 160, 0.582), 0 0 1em rgba(63, 73, 55, 0.733);
 }
 
+
+/*Botão Topo*/
+
+#voltarTopo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#subir {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
