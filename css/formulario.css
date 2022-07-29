@@ -43,13 +43,13 @@ label {
 
 .formulario-modal {
     display: none;
-    top: 60%;
+    top: 80%;
     left: 50%;
 }
 
 .modal-doacao {
     display: none;
-    top: 70%;
+    top: 90%;
     left: 50%;
 }
 
