@@ -61,46 +61,21 @@
                 <input type="button" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin(); fecharLogin()">
             </div>
         </div>
-
+        <div class="searchCity"><h3>Encontre estabelecimentos parceiros na sua região</h3>
+            <input type="text" name="cityList" id="cityList" list="cidadescadastradas">
+            <datalist id="cidadescadastradas">
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Porto Alegre">Porto Alegre</option>
+            </datalist>
+        </div>
         <section class="listaPontosdeColeta">
 
             <div class="titulo">
-                <h2>Encontre estabelecimentos parceiros na sua região</h2>
-                <h3>Pesquise pelo nome da sua cidade.</h3>
-                <div class="pesquisa" style="width: 600px;margin:0 auto;">
-                    <input type="text" id="nomeCidadePesquisa" placeholder="Cidade" required>
-                    <input type="button" id="btnPesquisa" value="Pesquisar        &#128269;" onclick="fetchApiPesquisa()">
-                </div>
+                <h2>Locais cadastrados</h2>
             </div>
-
             
-            <ul class="ul-vazia retangEnderecos"></ul>
-
-            <div class="retangEnderecos">
-                <p>Nome: Fulano de talpassado por variável</p>
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-            <div class="retangEnderecos">
-                <p>Nome: Fulano de talpassado por variável</p>
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-            <div class="retangEnderecos">
-                <p>Nome: Fulano de talpassado por variável</p>
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-            <div class="retangEnderecos">
-                <p>Nome: Fulano de talpassado por variável</p>
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-
         </section>
 
     </main>
@@ -216,14 +191,13 @@
     </footer>
 
     <script src="./js/header.js "></script>
-    <script src="./js/formulario.js "></script>
-    <script src="./js/cadEndereco.js "></script>
     <script src="./js/header.js"></script>
     <script src="./js/formulario.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/cadEndereco.js"></script>
     <script src="./js/getInfoPontoColeta.js"></script>
     <script src="./js/botaoTopo.js"></script>
+    <script src="./js/searchCity.js"></script>
 
 </body>
 

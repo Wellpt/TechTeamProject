@@ -54,11 +54,20 @@ button {
     border-radius: 20px;
 }
 
-
+/* busca cidades cadastradas */
+.searchCity{
+    text-align: center;
+    margin-top: 5vh;
+}
+#cityList{
+    margin: 15px;
+    width: 15vw;
+}
 /* Estilos para a lista de cadastrados */
 
 .listaPontosdeColeta {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
@@ -66,17 +75,23 @@ button {
     padding: 30px;
     background-color: #3E5902;
     height: auto;
+    max-height: 90vh;
+    overflow: auto;
 }
-
+ul {
+    list-style: "";
+}
 .retangEnderecos {
+    text-align: left;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #e3f4d7;
     border-radius: 20px;
-    margin: 20px;
-    width: 300px;
-    height: 250px;
+    margin: 6px;
+    width: 40vw;
+    height: auto;
+    padding: 0.5% 4vw;
 }
 
 .titulo {
