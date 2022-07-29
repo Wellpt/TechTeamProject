@@ -31,8 +31,9 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pontosColeta.html">Parceiros</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./parceiros.html">Parceiros</a></li>
+                <li><a href="./cadastroPonto.html">Cadastrar</a></li>
                 <li onclick="abrirLogin()"><a href="#">Login</a></li>
                 <li><a href="#footer">Contato</a></li>
             </ul>
@@ -272,64 +273,35 @@
     </div>
 
 
-    <footer class="footer" id="footer">
+    <footer id="footer-content">
+        <div class="media-content">
 
-        <div class="coluna" id="col1">
             <p>Endereço: Av Bernado Vieira de Melo, 1402. </p>
             <p> Viagem - Recife/PE </p>
             <p>E-mail: residuo.organico@gmail.com </p>
             <p>Telefone: 81-98869.3599 </p>
+            <figure>
+                <a href="#"><img src="./Imagens/img tratadas/icons/facebook.png"></a>
+                <a href="https://github.com/Wellpt/TechTeamProject" target="_blank">
+                    <img src="./Imagens/img tratadas/icons/git.png"></a>
+                <a href="#"><img src="./Imagens/img tratadas/icons/instagram.webp"></a>
+                <a href="https://wa.me/5581988693599?text=Agradecemos+o+seu+contato!+%0d%0aEm+breve+voc%c3%aa+ser%c3%a1+atendido."
+                    target="_blank"><img src="./Imagens/img tratadas/icons/whatsapp.png"></a>
+                <a href="#"><img src="./Imagens/img tratadas/icons/email.png"></a>
+            </figure>
         </div>
+        <div class="contact">
+            <h4 id="txtCont">Contato</h4>
+            <form action="https://formspree.io/f/xvolekkv" id="contact-form" method="POST">
 
-        <div class="coluna">
-            <div class="col2align">
-                <h3>Acompanhe nossas redes sociais</h3>
-                <ul class="socials" id="col2">
-
-                    <li>
-                        <a href="#"><img src="./Imagens/img tratadas/icons/facebook.png">
-                    </li>
-                    <li>
-                        <a href="https://github.com/Wellpt/TechTeamProject" target="_blank"><img
-                                src="./Imagens/img tratadas/icons/git.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./Imagens/img tratadas/icons/instagram.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/5581988693599?text=Agradecemos+o+seu+contato!+%0d%0aEm+breve+voc%c3%aa+ser%c3%a1+atendido."
-                            target="_blank"><img src="./Imagens/img tratadas/icons/whatsapp.png"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./Imagens/img tratadas/icons/email.png"></a>
-                    </li>
-                </ul>
-            </div>
+                <input class="form-contact" type="text" id="nameForm" placeholder="Nome Completo" name="name" required>
+                <input class="form-contact" type="email" id="mailForm" placeholder="exemplo@email.com" name="email"
+                    required>
+                <textarea class="form-contact" name="msg" id="messageForm" rows="4" placeholder="Mensagem"
+                    required></textarea>
+                <input id="submit-contact" type="submit" value="Enviar">
+            </form>
         </div>
-        <div class="coluna" id="col3">
-
-
-
-            <div class="contact">
-                <h4 id="txtCont">Contato</h4>
-                <form action="https://formspree.io/f/xvolekkv" id="contact-form" method="POST">
-
-                    <input class="form-contact" type="text" id="nameForm" placeholder="Nome Completo" name="name"
-                        required>
-
-
-                    <input class="form-contact" type="email" id="mailForm" placeholder="exemplo@email.com" name="email"
-                        required>
-                    <textarea class="form-contact" name="msg" id="messageForm" rows="4" placeholder="Mensagem"
-                        required></textarea>
-                    <input id="submit-contact" type="submit" value="Enviar">
-                </form>
-            </div>
-
-        </div>
-
     </footer>
 
     <script src="./js/header.js"></script>
@@ -340,6 +312,7 @@
     <script src="./js/index.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/botaoTopo.js"></script>
+    <script src="./js/getInfoPontoColeta.js"></script>
 
 </body>
 
