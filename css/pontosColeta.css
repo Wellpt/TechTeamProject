@@ -209,7 +209,8 @@ h1 {
 }
 
 #container img {
-  width: 250px;
+  width: 230px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
