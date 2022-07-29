@@ -22,19 +22,18 @@ h2 {
   margin: 100px auto;
 }
 
-
 .box {
   width: 100%;
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../Imagens/img11.jpg);
+    url(../Imagens/carousel/cadastro.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 .text-box {
-  padding-top: 40px;
+  padding-top: 100px;
   flex: 1 1 350px;
   animation: slideContent 0.4s linear 0.4s;
 }
@@ -179,15 +178,17 @@ h1 {
 }
 
 .depoimento {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    flex-wrap: wrap;
-    background-color: rgb(242, 242, 242);
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  background-color: rgb(242, 242, 242);
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 20px;
+  width: 100%;
 }
 
 #container {
@@ -201,11 +202,13 @@ h1 {
 }
 
 #carta {
-    height: 90%;
-    transform-style: preserve-3d;
-    transition: all 1.0s ease;
-    border-radius: 10%;
-    box-shadow: inset 0 0 1em rgba(188, 231, 160, 0.582), 0 0 1em rgba(63, 73, 55, 0.733)
+  width: 90%;
+  height: 90%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  border-radius: 10%;
+  box-shadow: inset 0 0 1em rgba(188, 231, 160, 0.582),
+    0 0 1em rgba(63, 73, 55, 0.733);
 }
 
 #container img {
@@ -301,44 +304,3 @@ h1 {
   bottom: 0px;
   right: 0px;
 }
-
-/* Pesquisa */
-
-.input-pesquisa {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-
-#nomeCidade {
-  width: 200px;
-}
-
-.pesquisar {
-  width: 200px;
-}
-
-.mostraCidades {
-  padding: 20px;
-  background-color:#e3f4d7;
-  max-width: 400px;
-  margin: 0 auto;
-  gap: 20px
-}
-
-.mostra p{
-  padding: 10px;
-}
-
-.container-cidades {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-@media (max-width: 630px) {
-  .retangEnderecos {
-    width: 96vw;
-    
-  }}
