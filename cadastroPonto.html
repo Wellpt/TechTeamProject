@@ -54,6 +54,50 @@
           </div>
         </div>
       </div>
+
+      <div class="formulario-modal">
+        <form  autocomplete="on">
+            <div class="form-doador">
+
+                <div class="fechar" onclick="fechar()">✘</div>
+
+                <h2>Cadastre-se!</h2>
+                <input type="radio" id="doador" class="coletor_doador" name="col_doa" value="doador" checked>
+                <label for="doador" class="radio"> Doador Parceiro</label>
+
+                <input type="radio" id="coletor" class="coletor_doador" name="col_doa" value="coletor">
+                <label for="coletor" class="radio"> Coletor </label>
+
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo*" required>
+
+                <input type="number" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ*" required>
+
+                <label for="login">Login:*</label>
+                <input type="email" id="email" name="login" placeholder="exemplo@email.com" required>
+
+                <label for="senha">Senha:*</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="telefone">Telefone:*</label>
+                <input type="number" id="telefone" name="telefone" required>
+
+                <label for="area">Área de atuação:*</label>
+                <select id="areaAtuacao">
+                    <option value="varejo" selected>Varejo</option>
+                    <option value="supermercado">Supermercado</option>
+                    <option value="hortifruti">Hortifruti</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="produtor rural">Produtor Rural</option>
+                    <option value="cooperativa">Cooperativa</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <input type="button" value="Enviar" name="Enviar" onclick="fetchApiSubmit(); fechar();">
+
+            </div>
+        </form>
+    </div>
+
         <section class="cadastro">
             <div class="texto-cadastro">
                 <h2>Cadastre um ponto de coleta de resíduos orgânicos!</h2>
