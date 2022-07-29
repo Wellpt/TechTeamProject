@@ -14,8 +14,8 @@
 
   <body>
     <header>
-      <nav class="menu">
-        <a class="logo" href="/">Sustenta-tech</a>
+        <nav class="menu">
+            <a class="logo" href="/">Sustenta-Tech</a>
 
         <div class="mobile-menu">
           <div class="line1"></div>
@@ -124,13 +124,67 @@
             class="bntproj"
             onclick="fetchApiSubmitLogin()"
           />
+
+        <div class="modalLogin" id="modalLogin">
+
+            <div class="modalInternLogin" id="modalInternLogin">
+
+                <div class="fechar" onclick="fecharLogin()">✘</div>
+
+                <h2>Realize o login para continuar!</h2><br>
+
+                <label for="login">Login:</label>
+                <input type="text" id="campoLogin" name="login" placeholder="exemplo@email.com" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="campoPassword" name="senha" required>
+
+                <input type="button" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin(); fecharLogin()">
+            </div>
+
         </div>
       </div>
 
-      <section class="listaPontosdeColeta">
-        <div class="titulo">
-          <h2>Encontre estabelecimentos parceiros na sua região</h2>
-        </div>
+        <section class="listaPontosdeColeta">
+
+            <div class="titulo">
+                <h2>Encontre estabelecimentos parceiros na sua região</h2>
+                <h3>Pesquise pelo nome da sua cidade.</h3>
+                <div class="pesquisa" style="width: 600px;margin:0 auto;">
+                    <input type="text" id="nomeCidadePesquisa" placeholder="Cidade" required>
+                    <input type="button" id="btnPesquisa" value="Pesquisar        &#128269;" onclick="fetchApiPesquisa()">
+                </div>
+            </div>
+
+            
+            <ul class="ul-vazia retangEnderecos"></ul>
+
+            <div class="retangEnderecos">
+                <p>Nome: Fulano de talpassado por variável</p>
+                <p>Estado: Nome do estado</p>
+                <p>Cidade: Nome da cidade</p>
+                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
+            </div>
+            <div class="retangEnderecos">
+                <p>Nome: Fulano de talpassado por variável</p>
+                <p>Estado: Nome do estado</p>
+                <p>Cidade: Nome da cidade</p>
+                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
+            </div>
+            <div class="retangEnderecos">
+                <p>Nome: Fulano de talpassado por variável</p>
+                <p>Estado: Nome do estado</p>
+                <p>Cidade: Nome da cidade</p>
+                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
+            </div>
+            <div class="retangEnderecos">
+                <p>Nome: Fulano de talpassado por variável</p>
+                <p>Estado: Nome do estado</p>
+                <p>Cidade: Nome da cidade</p>
+                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
+            </div>
+
+        </section>
 
         <div class="retangEnderecos">
           <p>Nome: Fulano de talpassado por variável</p>
@@ -180,147 +234,115 @@
     </div>
 
     <section class="depoimento">
-      <div id="container">
-        <div id="carta">
-          <div id="frente">
-            <img src="./Imagens/img tratadas/Cards/foto3.jfif" alt="" />
-            <h3>Ítalo Guerra</h3>
-          </div>
 
-          <div id="atras">
-            <h2>Depoimento</h2>
-            <p>
-              “Após aderir ao projeto Resíduos Orgânicos, percebi que estou
-              tendo maior rendimento, qualidade e uniformidade nas coletas. O
-              nosso foco agora é despedício zero”
-            </p>
-          </div>
+        <div id="container">
+            <div id="carta">
+                <div id="frente">
+                    <img src="./Imagens/img tratadas/Cards/foto3.jfif" alt="foto">
+                    <h3>Ítalo Guerra</h3>
+
+                </div>
+
+                <div id="atras">
+                    <h2>Depoimento</h2>
+                    <p>“Após aderir ao projeto Resíduos Orgânicos, percebi que estou tendo maior rendimento, qualidade e uniformidade nas coletas. O nosso foco agora é despedício zero”
+
+                    </p>
+                </div>
+
+            </div>
         </div>
-      </div>
 
-      <div id="container">
-        <div id="carta">
-          <div id="frente">
-            <img src="./Imagens/img tratadas/Cards/foto1.jfif" alt="" />
-            <h3>Alexia Meirelles</h3>
-          </div>
+        <div id="container">
+            <div id="carta">
+                <div id="frente">
+                    <img src="./Imagens/img tratadas/Cards/foto1.jfif" alt="foto">
+                    <h3>Alexia Meirelles</h3>
+                </div>
 
-          <div id="atras">
-            <h2>Depoimento</h2>
-            <p>
-              "Gostaria de parabenizar a todos que fazem parte deste projeto.
-              Soluções como essa que visam a sustentabilidade e redução de
-              desperdício são fundamentais nos dias atuais."
-            </p>
-          </div>
+                <div id="atras">
+                    <h2>Depoimento</h2>
+                    <p>"Gostaria de parabenizar a todos que fazem parte deste projeto. Soluções como essa que visam a sustentabilidade e redução de desperdício são fundamentais nos dias atuais."
+                    </p>
+
+
+                </div>
+            </div>
         </div>
-      </div>
+        <div id="container">
+            <div id="carta">
+                <div id="frente"><img src="./Imagens/img tratadas/Cards/foto2.jfif" alt="foto">
+                    <h3>João Medeiros</h3>
+                </div>
 
-      <div id="container">
-        <div id="carta">
-          <div id="frente">
-            <img src="./Imagens/img tratadas/Cards/foto2.jfif" alt="" />
-            <h3>João Medeiros</h3>
-          </div>
-
-          <div id="atras">
-            <h2>Depoimento</h2>
-            <p>
-              "Levando em consideração o desperdício, sustentabilidade e
-              rentabilidade, sempre buscamos soluções eficientes e inovadoras."
-            </p>
-
-            <p></p>
-          </div>
+                <div id="atras">
+                    <h2>Depoimento</h2>
+                    <p>"Levando em consideração o desperdício, sustentabilidade e rentabilidade, sempre buscamos soluções eficientes e inovadoras."
+                        <p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div id="container">
-        <div id="carta">
-          <div id="frente">
-            <img src="./Imagens/img tratadas/Cards/foto4.jfif" alt="" />
-            <h3>Priscila Sena</h3>
-          </div>
+        <div id="container">
+            <div id="carta">
+                <div id="frente">
+                    <img src="./Imagens/img tratadas/Cards/foto4.jfif" alt="">
+                    <h3>Priscila Sena</h3>
+                </div>
 
-          <div id="atras">
-            <h2>Depoimento</h2>
-            <p>
-              "Sou pequena agricultura. Hoje temos um percentual de desperdício
-              em torno de 10%. Poder contar com um projeto desse tipo fará
-              diferença.""
-            </p>
-          </div>
+
+                <div id="atras">
+                    <h2>Depoimento</h2>
+                    <p>"Sou pequena agricultura. Hoje temos um percentual de desperdício em torno de 10%. Poder contar com um projeto desse tipo fará diferença.""
+                    </p>
+                </div>
+            </div>
         </div>
       </div>
     </section>
 
+    <div id="voltarTopo">
+        <a href="#" id="subir"><img src="./Imagens/img tratadas/icons/seta-para-cima.png" alt=""></a>
+    </div>
+
     <footer id="footer-content">
-      <div class="media-content">
-        <p>Endereço: Av Bernado Vieira de Melo, 1402.</p>
-        <p>Viagem - Recife/PE</p>
-        <p>E-mail: residuo.organico@gmail.com</p>
-        <p>Telefone: 81-98869.3599</p>
-        <figure>
-          <a href="#"
-            ><img src="./Imagens/img tratadas/icons/facebook.png"
-          /></a>
-          <a href="https://github.com/Wellpt/TechTeamProject" target="_blank">
-            <img src="./Imagens/img tratadas/icons/git.png"
-          /></a>
-          <a href="#"
-            ><img src="./Imagens/img tratadas/icons/instagram.webp"
-          /></a>
-          <a
-            href="https://wa.me/5581988693599?text=Agradecemos+o+seu+contato!+%0d%0aEm+breve+voc%c3%aa+ser%c3%a1+atendido."
-            target="_blank"
-            ><img src="./Imagens/img tratadas/icons/whatsapp.png"
-          /></a>
-          <a href="#"><img src="./Imagens/img tratadas/icons/email.png" /></a>
-        </figure>
-      </div>
-      <div class="contact">
-        <h4 id="txtCont">Contato</h4>
-        <form
-          action="https://formspree.io/f/xvolekkv"
-          id="contact-form"
-          method="POST"
-        >
-          <input
-            class="form-contact"
-            type="text"
-            id="nameForm"
-            placeholder="Nome Completo"
-            name="name"
-            required
-          />
-          <input
-            class="form-contact"
-            type="email"
-            id="mailForm"
-            placeholder="exemplo@email.com"
-            name="email"
-            required
-          />
-          <textarea
-            class="form-contact"
-            name="msg"
-            id="messageForm"
-            rows="4"
-            placeholder="Mensagem"
-            required
-          ></textarea>
-          <input id="submit-contact" type="submit" value="Enviar" />
-        </form>
-      </div>
+        <div class="media-content">
+
+            <p>Endereço: Av Bernado Vieira de Melo, 1402. </p>
+            <p> Viagem - Recife/PE </p>
+            <p>E-mail: residuo.organico@gmail.com </p>
+            <p>Telefone: 81-98869.3599 </p>
+            <figure>
+                <a href="#"><img src="./Imagens/img tratadas/icons/facebook.png"></a>
+                <a href="https://github.com/Wellpt/TechTeamProject" target="_blank">
+                    <img src="./Imagens/img tratadas/icons/git.png"></a>
+                <a href="#"><img src="./Imagens/img tratadas/icons/instagram.webp"></a>
+                <a href="https://wa.me/5581988693599?text=Agradecemos+o+seu+contato!+%0d%0aEm+breve+voc%c3%aa+ser%c3%a1+atendido." target="_blank"><img src="./Imagens/img tratadas/icons/whatsapp.png"></a>
+                <a href="#"><img src="./Imagens/img tratadas/icons/email.png"></a>
+            </figure>
+        </div>
+        <div class="contact">
+            <h4 id="txtCont">Contato</h4>
+            <form action="https://formspree.io/f/xvolekkv" id="contact-form" method="POST">
+
+                <input class="form-contact" type="text" id="nameForm" placeholder="Nome Completo" name="name" required>
+                <input class="form-contact" type="email" id="mailForm" placeholder="exemplo@email.com" name="email" required>
+                <textarea class="form-contact" name="msg" id="messageForm" rows="4" placeholder="Mensagem" required></textarea>
+                <input id="submit-contact" type="submit" value="Enviar">
+            </form>
+        </div>
     </footer>
 
+    <script src="./js/header.js "></script>
+    <script src="./js/formulario.js "></script>
+    <script src="./js/cadEndereco.js "></script>
     <script src="./js/header.js"></script>
     <script src="./js/formulario.js"></script>
     <script src="./js/login.js"></script>
-    <script src="./js/carousel.js"></script>
-    <script src="./js/cadUsers.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/cadEndereco.js"></script>
+    <script src="./js/getInfoPontoColeta.js"></script>
     <script src="./js/botaoTopo.js"></script>
-  </body>
+
+</body>
+
 </html>
