@@ -61,27 +61,27 @@
                     <label for="nomefantasia">Nome fantasia/Razão Social:*</label>
                     <input type="text" id="nome" name="nomefantasia" placeholder="Mercado do José" required>
 
-                    <label for="telefone">Rua:*</label>
-                    <input type="number" id="telefone" name="telefone" required>
+                    <label for="telefone">Telefone:*</label>
+                    <input type="number" id="telefone" name="telefone" required maxlength="14">
+                    <form id="formAdress" action="#" onsubmit="return false">
+                        <label for="cep">CEP para retirada:*</label>
+                        <input type="text" id="cep" name="cep" placeholder="Somente números" required maxlength="9" onblur="pesquisacep(this.value);">
 
-                    <label for="logradouro">Rua:*</label>
-                    <input type="text" id="logradouro" name="logradouro" required>
+                        <label for="logradouro">Logradouro:*</label>
+                        <input type="text" id="logradouro" name="logradouro" disabled="">
 
-                    <label for="numero">Número:*</label>
-                    <input type="number" id="numero" name="numero" required>
+                        <label for="numero">Número:*</label>
+                        <input type="number" id="numero" name="numero" required>
 
-                    <label for="bairro">Bairro:*</label>
-                    <input type="text" id="bairro" name="bairro" required>
+                        <label for="bairro">Bairro:*</label>
+                        <input type="text" id="bairro" name="bairro" disabled="">
 
-                    <label for="cep">CEP para retirada:*</label>
-                    <input type="number" id="cep" name="cep" placeholder="12345678" required>
+                        <label for="cidade">Cidade:*</label>
+                        <input type="text" id="cidade" name="cidade" disabled="">
 
-                    <label for="cidade">Cidade:*</label>
-                    <input type="text" id="cidade" name="cidade" required>
-
-                    <label for="estado">Estado:*</label>
-                    <input type="text" id="estado" name="estado" required>
-
+                        <label for="estado">Estado:*</label>
+                        <input type="text" id="estado" name="estado" disabled="">
+                    </form>
                     <label for="data_coleta">Dia e horário da coleta:*</label>
                     <input type="text" id="data_coleta" name="data_coleta"
                         placeholder="Ex: toda quinta-feira às 09:00 horas" required>
@@ -89,13 +89,9 @@
                     <label for="quantidade">Quantidade(kg):</label>
                     <input type="number" id="quantidade" name="quantidade">
 
-                    <!-- <select id="frequencia">
-                        <option value="unica" selected>Única</option>
-                        <option value="semanal">Semanal</option>
-                        <option value="mensal">Mensal</option>
-                    </select> -->
+                    
 
-                    <input type="submit" name="Enviar" onclick="fetchApiSubmit()">
+                    <input type="button" name="Enviar" onclick="fetchApiSubmit(), fechardoacao()">
 
                 </div>
             </div>
@@ -119,141 +115,7 @@
             </div>
         </div>
 
-        <!-- <div class="modalLogin" id="modalLogin">
-
-            <div class="modalInternLogin" id="modalInternLogin">
-
-                <div class="fechar" onclick="fecharLogin()">✘</div>
-
-                <h2>Realize o login para continuar!</h2><br>
-
-                <label for="login">Login:</label>
-                <input type="text" id="campoLogin" name="login" placeholder="exemplo@email.com" required>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="campoPassword" name="senha" required>
-
-                <input type="submit" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin()">
-            </div>
-        </div>
-
-        <section class="listaPontosdeColeta">
-            <div class="titulo">
-            <h2>Encontre estabelecimentos parceiros na sua região</h2>
-            </div>
-
-            <div class="retangEnderecos">
-                <p>Nome: Fulano de talpassado por variável</p> 
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-            <div class="retangEnderecos">
-                <p>Nome: Fulano de talpassado por variável</p> 
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-            <div class="retangEnderecos">                
-                <p>Nome: Fulano de talpassado por variável</p> 
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-            <div class="retangEnderecos">                
-                <p>Nome: Fulano de talpassado por variável</p> 
-                <p>Estado: Nome do estado</p>
-                <p>Cidade: Nome da cidade</p>
-                <a id="btnConnect" href="/link pra registrar ponto ao coletor"><img src="./Imagens/conecte-se.png" alt="botao pra conectar os dois"></a>
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-
-    <div class="texto-depoimento">
-        <h2>Depoimentos dos parceiros</h2>
-
-    </div>
-
-    <section class="depoimento">
-
-        <div id="container">
-            <div id="carta">
-                <div id="frente">
-                    <img src="./Imagens/img tratadas/Cards/foto3.jfif" alt="">
-                    <h3>Ítalo Guerra</h3>
-
-                </div>
-
-                <div id="atras">
-                    <h2>Depoimento</h2>
-                    <p>“Após aderir ao projeto Resíduos Orgânicos, percebi que estou tendo maior rendimento, qualidade e uniformidade nas coletas. O nosso foco agora é despedício zero”
-
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-
-
-        <div id="container">
-            <div id="carta">
-                <div id="frente">
-                    <img src="./Imagens/img tratadas/Cards/foto1.jfif" alt="">
-                    <h3>Alexia Meirelles</h3>
-                </div>
-
-                <div id="atras">
-                    <h2>Depoimento</h2>
-                    <p>"Gostaria de parabenizar a todos que fazem parte deste projeto. Soluções como essa que visam a sustentabilidade e redução de desperdício são fundamentais nos dias atuais."
-                    </p>
-
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div id="container">
-            <div id="carta">
-                <div id="frente"><img src="./Imagens/img tratadas/Cards/foto2.jfif" alt="">
-                    <h3>João Medeiros</h3>
-                </div>
-
-                <div id="atras">
-                    <h2>Depoimento</h2>
-                    <p>"Levando em consideração o desperdício, sustentabilidade e rentabilidade, sempre buscamos soluções eficientes e inovadoras."
-                        <p>
-                </div>
-            </div>
-        </div>
-
-        <div id="container">
-            <div id="carta">
-                <div id="frente">
-                    <img src="./Imagens/img tratadas/Cards/foto4.jfif" alt="">
-                    <h3>Priscila Sena</h3>
-                </div>
-
-
-                <div id="atras">
-                    <h2>Depoimento</h2>
-                    <p>"Sou pequena agricultura. Hoje temos um percentual de desperdício em torno de 10%. Poder contar com um projeto desse tipo fará diferença.""
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-    </section> -->
+        
 
         <footer id="footer-content">
             <div class="media-content">
@@ -287,14 +149,15 @@
             </div>
         </footer>
 
-        <script src="./js/header.js "></script>
-        <script src="./js/formulario.js "></script>
-        <script src="./js/cadEndereco.js "></script>
         <script src="./js/header.js"></script>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="./js/buscaCep.js"></script>
         <script src="./js/formulario.js"></script>
         <script src="./js/login.js"></script>
         <script src="./js/cadEndereco.js"></script>
         <script src="./js/getInfoPontoColeta.js"></script>
+        
+		
 
 </body>
 
