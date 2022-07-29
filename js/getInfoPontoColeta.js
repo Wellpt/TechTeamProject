@@ -1,18 +1,46 @@
 function fetchApiPesquisa() {
     const url = 'https://web-api-form.herokuapp.com/';
-    const cidade = document.querySelector('#nomeCidadePesquisa'); 
+    const cidade = document.querySelector('#nomeCidade'); 
         
     fetch(`${url}pontocoleta/${cidade.value}`)
         .then((response) => {return response.json()})
         .then((data) => {
-            const ul = document.querySelector('.ul-vazia')
+            const ul = document.querySelector('.container-cidades')
             ul.innerHTML = "";
 
             data.forEach((item) => {                                
-                    ul.innerHTML += `<li>Nome: ${item.nome}</li><br>
-                    <li>Cidade: ${item.cidade}</li><br>
-                    <li>Telefone: ${item.telefone}</li><br>
-                    <li>Data de Coleta: ${item.data_coleta}</li>`
+                    ul.innerHTML += `
+                    <div class="mostraCidades">
+                        <div class="mostra">
+                            <p>Nome: ${item.nome}</p>
+                            <p>Cidade: ${item.cidade}</p>
+                            <p>Telefone: ${item.telefone}</p>
+                            Data de Coleta: ${item.data_coleta}
+                        </div>
+                    </div>`
+            })
+        })  
+}
+
+function fetchApiPesquisaTodos() {
+    const url = 'https://web-api-form.herokuapp.com/';    
+        
+    fetch(`${url}pontocoleta`)
+        .then((response) => {return response.json()})
+        .then((data) => {
+            const ul = document.querySelector('.container-cidades')
+            ul.innerHTML = "";
+
+            data.forEach((item) => {                                
+                    ul.innerHTML += `
+                    <div class="mostraCidades">
+                        <div class="mostra">
+                            <p>Nome: ${item.nome}</p>
+                            <p>Cidade: ${item.cidade}</p>
+                            <p>Telefone: ${item.telefone}</p>
+                            Data de Coleta: ${item.data_coleta}
+                        </div>
+                    </div>`
             })
         })  
 }

@@ -33,7 +33,7 @@ h2 {
   background-size: cover;
 }
 .text-box {
-  padding-top: 100px;
+  padding-top: 40px;
   flex: 1 1 350px;
   animation: slideContent 0.4s linear 0.4s;
 }
@@ -299,4 +299,40 @@ h1 {
   position: fixed;
   bottom: 0px;
   right: 0px;
+}
+
+/* Pesquisa */
+
+.input-pesquisa {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#nomeCidade {
+  width: 200px;
+}
+
+.pesquisar {
+  width: 200px;
+}
+
+.mostraCidades {
+  padding: 20px;
+  background-color:#e3f4d7;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 20px
+}
+
+.mostra p{
+  padding: 10px;
+}
+
+.container-cidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
