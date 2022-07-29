@@ -2,10 +2,10 @@ function fetchApiPesquisa() {
     const url = 'https://web-api-form.herokuapp.com/';
     const cidade = document.querySelector('#nomeCidade'); 
         
-    fetch(`${url}pontocoleta/${cidade.value}`)
+    fetch(`${url}pontocoleta/${cidade.value.toUpperCase()}`)
         .then((response) => {return response.json()})
         .then((data) => {
-            const ul = document.querySelector('.container-cidades')
+            const ul = document.querySelector('.container-cidade')
             ul.innerHTML = "";
 
             data.forEach((item) => {                                

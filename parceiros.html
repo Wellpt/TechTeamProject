@@ -62,7 +62,7 @@ l
           </div>
         </div>
 
-        <section>
+        <!-- <section class="sections" style="height: 1000px;">
             <div style="margin: 20px;">
                 <h2>Pesquise os pontos de coleta cadastrados:</h2>
             </div>
@@ -76,7 +76,7 @@ l
             </div>
         </section>
 
-        <section>
+        <section class="sections">
             <div style="margin: 20px;">
                 <h2>Pesquise os pontos de coleta perto de você:</h2>
             </div>
@@ -87,7 +87,7 @@ l
             <div class="container-cidades">
     
             </div>
-        </section>
+        </section> -->
 
         <div class="formulario-modal">
             <form autocomplete="on">
@@ -157,7 +157,7 @@ l
         </div>
         </div>
 
-        <div class="searchCity">
+        <!-- <div class="searchCity">
             <h3>Encontre estabelecimentos parceiros na sua região</h3>
             <input type="text" name="cityList" id="cityList" list="cidadescadastradas" />
             <datalist id="cidadescadastradas">
@@ -173,7 +173,34 @@ l
                 <h2>Locais cadastrados</h2>
             </div>
         </section>
-    </main>    
+    </main>     -->
+
+    <section class="sections">
+        <div style="margin: 20px;">
+            <h2>Pesquise os pontos de coleta cadastrados:</h2>
+        </div>
+        <div class="input-pesquisa">
+
+            <input type="button" value="Pesquisar" classe="pesquisar" onclick="fetchApiPesquisaTodos()"
+                style="width: 200px;">
+        </div>
+        <div class="container-cidades">
+
+        </div>
+    </section>
+
+    <section class="sections">
+        <div style="margin: 20px;">
+            <h2>Pesquise os pontos de coleta perto de você:</h2>
+        </div>
+        <div class="input-pesquisa">
+            <input type="text" placeholder="Cidade" id="nomeCidade">
+            <input type="button" value="Pesquisar" class="pesquisar" onclick="fetchApiPesquisa()">
+        </div>
+        <div class="container-cidade">
+
+        </div>
+    </section>
 
     <div class="texto-depoimento">
         <h2>Depoimentos dos parceiros</h2>

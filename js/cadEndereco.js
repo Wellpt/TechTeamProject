@@ -17,7 +17,7 @@ function fetchApiSubmit() {
         numero: numero,
         bairro: bairro,
         cep: cep, 
-        cidade: cidade,
+        cidade: cidade.toUpperCase(),
         estado: estado,
         data_coleta: data,
         quantidade: quantidade        
