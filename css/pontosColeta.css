@@ -305,3 +305,8 @@ h1 {
   bottom: 0px;
   right: 0px;
 }
+@media (max-width: 630px) {
+  .retangEnderecos {
+    width: 96vw;
+    
+  }}
