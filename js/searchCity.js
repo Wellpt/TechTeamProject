@@ -18,8 +18,14 @@ const cityRegistered = [
 'UF':'Rio Grande do Sul',
 'city':'Porto Alegre'},
 ];
-
-
+/* let listSelected = document.querySelector('#cidadescadastradas').value;
+console.log(listSelected)
+let listSelection = [];
+if (citySelected.value = ""){
+    listSelection = cityRegistered;
+} else{
+    listSelection = cityRegistered.slice(listSelected.value)
+} */
 function insertHeader(){
     for (i=0; i< cityRegistered.length; i++){
   
@@ -35,5 +41,4 @@ function insertHeader(){
         document.querySelector('.listaPontosdeColeta').innerHTML += codeBlock;
    }
 };
-
 insertHeader();

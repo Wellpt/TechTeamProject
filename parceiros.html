@@ -20,7 +20,7 @@
 <body>
     <header>
         <nav class="menu">
-            <a class="logo" href="/">Logo</a>
+            <a class="logo" href="/">Sustenta-Tech</a>
 
             <div class="mobile-menu">
                 <div class="line1"></div>
@@ -58,19 +58,20 @@
                 <label for="senha">Senha:</label>
                 <input type="password" id="campoPassword" name="senha" required>
 
-                <input type="submit" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin()">
+                <input type="button" name="Entrar" class="bntproj" onclick="fetchApiSubmitLogin(); fecharLogin()">
             </div>
         </div>
         <div class="searchCity"><h3>Encontre estabelecimentos parceiros na sua região</h3>
             <input type="text" name="cityList" id="cityList" list="cidadescadastradas">
             <datalist id="cidadescadastradas">
-                <option value="poa">Poa</option>
-                <option value="teste">teste</option>
-                <option value="tunia">Poa</option>
-                <option value="tee">Poa</option>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Porto Alegre">Porto Alegre</option>
             </datalist>
         </div>
         <section class="listaPontosdeColeta">
+
             <div class="titulo">
                 <h2>Locais cadastrados</h2>
             </div>
@@ -78,9 +79,6 @@
         </section>
 
     </main>
-
-
-
 
     <div class="texto-depoimento">
         <h2>Depoimentos dos parceiros</h2>
@@ -92,7 +90,7 @@
         <div id="container">
             <div id="carta">
                 <div id="frente">
-                    <img src="./Imagens/img tratadas/Cards/foto3.jfif" alt="">
+                    <img src="./Imagens/img tratadas/Cards/foto3.jfif" alt="foto">
                     <h3>Ítalo Guerra</h3>
 
                 </div>
@@ -107,13 +105,10 @@
             </div>
         </div>
 
-
-
-
         <div id="container">
             <div id="carta">
                 <div id="frente">
-                    <img src="./Imagens/img tratadas/Cards/foto1.jfif" alt="">
+                    <img src="./Imagens/img tratadas/Cards/foto1.jfif" alt="foto">
                     <h3>Alexia Meirelles</h3>
                 </div>
 
@@ -132,7 +127,7 @@
 
         <div id="container">
             <div id="carta">
-                <div id="frente"><img src="./Imagens/img tratadas/Cards/foto2.jfif" alt="">
+                <div id="frente"><img src="./Imagens/img tratadas/Cards/foto2.jfif" alt="foto">
                     <h3>João Medeiros</h3>
                 </div>
 

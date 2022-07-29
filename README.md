@@ -1,35 +1,18 @@
-[:brazil:](README.pt.md)
+[:brazil:]
 
+Sustenta-Tech
+# Descrição do Projeto
+## O projeto visa conectar agricultor, comércios, restaurantes e produtores de insumos agrícolas, a fim de que seus resíduos sólidos (alimentos) tenham a destinação correta e que possam ser transformados em composto orgânico ou reutilizados em algum outro processo. Desenvolvido desde o coneito até a apresentação final durante a semana Hackaton organizada pela Tech Academy - StartSE. A solução tecnológica apresentada busca contribuir contra o problema do  desperdício e incentivar produtores à adoção de práticas sustentáveis.
 
-<h1 align="center" color="green" size="30px">Sustenta-Tech<br></h1>
-<a href="https://github.com/Wellpt/TechTeamProject"><p align="center">
+# Justificativa:
+Todos os dias surgem novas tecnologias, porém, nem sempre as soluções apresentadas são acessíves ao público alvo. Buscando atender desde o pequeno produtor ao grande comérciante, a Sustenta-Tech desenvolveu uma ferramente de fácil manuseio, que pode ser acessada por desktop e por dispositivos mobile para auxiliar nessa tarefa constante de comate ao desperdício.
 
+# Status do projeto
+Atualmente o site já conta com apresentação do escopo do projeto, implamentação de cadastro de usuários e pontos de coleta com registro, busca e edição feitas com MySQL através do Heroku.
 
-<h3># Project Description :page_with_curl:</h3>
-<p>## Tech Academy final project - Hackathon. The project is being developed by systems development students. The technological solution presented in this project aims to connect the farmer, businesses, restaurants and producers of agricultural inputs, so that these producers can collect what would be thrown away and transformed into organic compost. Thus avoiding waste and encouraging agricultural producers to adopt sustainable practices.</p>
+# Tecnologias Utilizadas:
+<p> <img src="https://raw.githubusercontent.com/Wellpt/TechTeamProject/ea8b4dc3b6f1aee6a1887fedbf2771311766d34a/Imagens/links%20readme/html-5.svg" width="50px" height="50px" name="HTML5"> <img src="https://raw.githubusercontent.com/Wellpt/TechTeamProject/ea8b4dc3b6f1aee6a1887fedbf2771311766d34a/Imagens/links%20readme/JS.svg" width="50px" height="50px"> <img src="https://raw.githubusercontent.com/Wellpt/TechTeamProject/ea8b4dc3b6f1aee6a1887fedbf2771311766d34a/Imagens/links%20readme/mysql.png" width="50px" height="50px"><img src="https://raw.githubusercontent.com/Wellpt/TechTeamProject/ea8b4dc3b6f1aee6a1887fedbf2771311766d34a/Imagens/links%20readme/css-3.svg" width="50px" height="50px"><img src="https://raw.githubusercontent.com/Wellpt/TechTeamProject/ea8b4dc3b6f1aee6a1887fedbf2771311766d34a/Imagens/links%20readme/github2.svg" width="50px" height="50px"><img src="https://raw.githubusercontent.com/Wellpt/TechTeamProject/ea8b4dc3b6f1aee6a1887fedbf2771311766d34a/Imagens/links%20readme/heroku.png" width="50px" height="50px"></p>
 
-<h3>Problem presentation:</h3>
-<p>The United Nations (ONU) defined the 5 main factors causing food waste: Agricultural production: losses due to mechanical damage and/or spillage during the harvesting operation; Post-harvest handling and storage: losses due to spillage and degradation during handling, storage and transport between farm and distribution. Of all the fruits and vegetables that go to waste in Brazil, around 50% are lost during transport and handling, processing and distribution.<p>
-
-<h3>Justification:</h3>
-<p>New technologies appear every day, however, the solutions presented are not always accessible to the target audience. Seeking to serve from the small producer to the large merchant, Sustenta-Tech has developed an easy-to-use tool, which can be accessed by desktop and mobile devices.</P>
-
-<h3>Sustenta-Tech</h3>
-<p>The website that aims to connect farmers, businesses, restaurants and producers of agricultural inputs, so that their solid waste (food) has the correct destination and can be transformed into organic compost.</p>
-
-<h3># Project Status</h3>
-<p align="center">Website developed. In which it is now possible to register both waste partners/donations and those interested in obtaining this material for transformation into organic compost.</p>
-
-
-<h3># Technologies used:</h3>
-<p> HTML5, CSS, JavaScrip</p>
-
-<h3>Responsive features</h3>
-<p>Desktop view / Mobile</p>
-
-
-
-
-<h3># Contributors</h3>
-
-<p>Rodrigo Luna</p>(https://github.com/Rodrigoluma) | <p> Wellington Nobre</p>(https://github.com/WellingtonNobre) | <p> Mário Cesar</p> (https://github.com/MarioCesarCF) | <p>Jéssica Santana</p>(https://github.com/DJehSantana) | <p>Ana Santos</p>(https://github.com/anikape)
+# Colaboradores
+| [<img src="https://avatars.githubusercontent.com/u/85394826?s=400&u=dde1ad05ed51bc897617f015a6509f4f537ce5be&v=4" width=115><br><sub>Rodrigo Martello</sub>](https://github.com/Rodrigoluma) |  [<img src="https://avatars.githubusercontent.com/u/107427628?v=4" width=115><br><sub>Wellington Nobre</sub>](https://github.com/WellingtonNobre) |  [<img src="https://avatars.githubusercontent.com/u/107722708?v=4" width=115><br><sub>Mario Cesar</sub>](https://github.com/MarioCesarCF) | [<img src="https://avatars.githubusercontent.com/u/105378159?v=4" width=115><br><sub>Jéssica Santana</sub>](https://github.com/DJehSantana) | [<img src="https://avatars.githubusercontent.com/u/104070821?v=4" width=115><br><sub>Ana Santos</sub>](https://github.com/anikape) | 
+| :---: | :---: | :---: | :---: | :---: |
