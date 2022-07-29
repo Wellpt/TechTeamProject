@@ -39,14 +39,15 @@ body {
 /* Estilos para a lista de cadastrados */
 
 .listaPontosdeColeta{
-    margin: 20% 10%;
-    border: #593e25 5px solid;
-    height: 500px;
-    border-radius: 2%;
-    justify-content: center;
-    align-items: center;
     display:flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20% 10%;
+    background-color: #e3f4d7;
+    border: #593e25 5px solid;
+    height: auto;
+    border-radius: 2%;
 }
 .retangEnderecos{
     display: flex;
@@ -56,6 +57,12 @@ body {
     height: auto;
     width: 80%;
 }
+
+.retangEnderecos img{
+    width: 50px;
+    height: 50px;
+}
+
 #btnnConect{
     right: 5px;
     width:3px;
