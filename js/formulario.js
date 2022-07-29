@@ -46,6 +46,7 @@ function fetchApiSubmitLogin() {
                 .then(
                     alert('Login realizado com sucesso.')
                     )
-        )    
+        )
+        .catch((error) => {console.error(error)})    
 }
 
