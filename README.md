@@ -5,7 +5,7 @@ Sustenta-Tech
 ## O projeto visa conectar agricultor, comércios, restaurantes e produtores de insumos agrícolas, a fim de que seus resíduos sólidos (alimentos) tenham a destinação correta e que possam ser transformados em composto orgânico ou reutilizados em algum outro processo. Desenvolvido desde o coneito até a apresentação final durante a semana Hackaton organizada pela Tech Academy - StartSE. A solução tecnológica apresentada busca contribuir contra o problema do  desperdício e incentivar produtores à adoção de práticas sustentáveis.
 
 # Justificativa:
-Todos os dias surgem novas tecnologias, porém, nem sempre as soluções apresentadas são acessíves ao público alvo. Buscando atender desde o pequeno produtor ao grande comérciante, a Sustenta-Tech desenvolveu uma ferramente de fácil manuseio, que pode ser acessada por desktop e por dispositivos mobile para auxiliar nessa tarefa constante de comate ao desperdício.
+Todos os dias surgem novas tecnologias, porém, nem sempre as soluções apresentadas são acessíves ao público alvo. Buscando atender desde o pequeno produtor ao grande comérciante, a Sustenta-Tech desenvolveu uma ferramente de fácil manuseio, que pode ser acessada por desktop e por dispositivos mobile para auxiliar nessa tarefa constante de combate ao desperdício.
 
 # Status do projeto
 Atualmente o site já conta com apresentação do escopo do projeto, implamentação de cadastro de usuários e pontos de coleta com registro, busca e edição feitas com MySQL através do Heroku.
